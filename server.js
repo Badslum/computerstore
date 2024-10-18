@@ -9,6 +9,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+// Route to serve JavaScript files with the correct MIME type
+app.get('/public/*.js', (req, res) => {
+  res.set('Content-Type', 'application/javascript');
+  res.sendFile(req.path);
+});
 
 // Start the server
 const PORT = process.env.PORT || 3000;
