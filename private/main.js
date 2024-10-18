@@ -1,5 +1,3 @@
-
-
 async function fetchTranslations(language) {
     const response = await fetch(`../data/${language}.json`);
     return await response.json();
