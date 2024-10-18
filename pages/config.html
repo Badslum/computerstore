@@ -7,7 +7,7 @@
 <script src="../private/calc.js"></script>
 </head>
 <body>
-    <div><h1>Wähle ein Gehäuse aus</h1>   
+    <div><h1 id="h1case"> Select a computer case</h1>   
     <div id="cat18" name="cat18" class="case_selector">
         <div class="scrollbar-inner">
             <div class="case-inner-holder">
@@ -33,54 +33,45 @@
     <!--input-Elemente verwenden das Attribut name="18", was bedeutet, dass sie zu einer gemeinsamen Auswahlliste gehören. Dadurch kann immer nur eine Option gleichzeitig ausgewählt werden.-->
     </div>
 
-   <div> <h1>Wähle deine Hauptkomponenten</h1>
-    <label for="cpu">Prozessor (CPU)</label> <br>
+   <div> <h1 id="h1maincomponents">Select your main components</h1>
+    <label for="cpu" id="lcpu">Processor (CPU)</label> <br>
     <select id="cpu" name="cpu">
-        <optgroup label="AMD RYZEN™ 3 PROZESSOREN">
-            <option value="ryzen3_4100">AMD Ryzen 3 4100 4-Core-CPU (3,8GHz-4,0 GHz/6MB CACHE/AM4)</option>
-            <option value="ryzen3_4300g">AMD Ryzen 3 4300G 4-Core-CPU mit Radeon™-Grafikkarte (3,8 GHz-4,0 GHz/4 MB CACHE/AM4)</option>
+        <optgroup id="lamd_ryzen3" label="AMD RYZEN™ 3 PROCESSORS">
+            <option id="oprocessor1" value="ryzen3_4100">AMD Ryzen 3 4100 4-Core-CPU (3,8GHz-4,0 GHz/6MB CACHE/AM4)</option>
+            <option id="oprocessor2" value="ryzen3_4300g">AMD Ryzen 3 4300G 4-Core-CPU with Radeon™-graphics card (3,8 GHz-4,0 GHz/4 MB CACHE/AM4)</option>
         </optgroup>       
-        <optgroup label="AMD RYZEN™ 5 PROZESSOREN">
-            <option value="ryzen5_4500">AMD Ryzen 5 4500 6-Core-CPU (3,6GHz-4,1 GHz/11MB CACHE/AM4)</option>
-            <option value="ryzen5_5500">AMD Ryzen 5 5500 6-Core-CPU (3,6GHz-4,2 GHz/19MB CACHE/AM4)</option>
-            <option value="ryzen5_4600g">AMD Ryzen 5 4600G 6-Core-CPU mit Radeon™-Grafikkarte (3,7 GHz-4,2 GHz/11 MB CACHE/AM4)</option>
-            <option value="ryzen5_5500gt">AMD-Ryzen-5-5500GT-Six-Core-CPU mit Radeon™-Grafik (3,6–4,4 GHz / 19 MB Cache / AM4)</option>
-            <option value="ryzen5_5600g">AMD Ryzen 5 5600G 6-Core-CPU mit Radeon™-Grafikkarte (3,9 GHz-4,4 GHz/19 MB CACHE/AM4)</option>
-            <option value="ryzen5_5600">AMD Ryzen 5 5600 6-Core-CPU (3,5 GHz - 4,4 GHz/35 MB CACHE/AM4)</option>
-            <option value="ryzen5_5600gt">AMD Ryzen 5 5600GT 6-Core-CPU mit Radeon™-Grafikkarte (3,6 GHz-4,6 GHz/19 MB CACHE/AM4)</option>
-            <option value="ryzen5_5600x">AMD Ryzen 5 5600X 6-Core-CPU (3,7 GHz - 4,6 GHz/35 MB CACHE/AM4)</option>
+        <optgroup id="lamd_ryzen5" label="AMD RYZEN™ 5 PROCESSORS">
+            <option id="oprocessor3" value="ryzen5_4500">AMD Ryzen 5 4500 6-Core-CPU (3,6GHz-4,1 GHz/11MB CACHE/AM4)</option>
+            <option id="oprocessor4" value="ryzen5_5500">AMD Ryzen 5 5500 6-Core-CPU (3,6GHz-4,2 GHz/19MB CACHE/AM4)</option>
+            <option id="oprocessor5" value="ryzen5_4600g">AMD Ryzen 5 4600G 6-Core-CPU with Radeon™-graphics card (3,7 GHz-4,2 GHz/11 MB CACHE/AM4)</option>
+            <option id="oprocessor6" value="ryzen5_5600gt">AMD Ryzen 5 5600GT 6-Core-CPU with Radeon™-graphics card (3,6 GHz-4,6 GHz/19 MB CACHE/AM4)</option>
+            <option id="oprocessor7" value="ryzen5_5600x">AMD Ryzen 5 5600X 6-Core-CPU (3,7 GHz - 4,6 GHz/35 MB CACHE/AM4)</option>
         </optgroup>      
-        <optgroup label="AMD RYZEN™ 7 PROZESSOREN">
-            <option value="ryzen7_5700">AMD Ryzen 7 5700 8-Core-CPU (3,7 GHz - 4,6 GHz/20 MB CACHE/AM4)</option>
-            <option value="ryzen7_5700x">AMD Ryzen 7 5700X 8-Core-CPU (3,4 GHz - 4,6 GHz/36 MB CACHE/AM4)</option>
-            <option value="ryzen7_5700x3d">AMD Ryzen 7 5700X3D 8-Core-CPU (3,0 GHz - 4,1 GHz/100 MB CACHE/AM4)</option>
-            <option value="ryzen7_5800x">AMD Ryzen 7 5800X 8-Core-CPU (3,8 GHz - 4,7 GHz/36 MB CACHE/AM4)</option>
+        <optgroup id="lamd_ryzen7" label="AMD RYZEN™ 7 PROCESSORS">
+            <option id="oprocessor8" value="ryzen7_5700">AMD Ryzen 7 5700 8-Core-CPU (3,7 GHz - 4,6 GHz/20 MB CACHE/AM4)</option>
+            <option id="oprocessor9" value="ryzen7_5700x">AMD Ryzen 7 5700X 8-Core-CPU (3,4 GHz - 4,6 GHz/36 MB CACHE/AM4)</option>
+            <option id="oprocessor10" value="ryzen7_5700x3d">AMD Ryzen 7 5700X3D 8-Core-CPU (3,0 GHz - 4,1 GHz/100 MB CACHE/AM4)</option>
+            <option id="oprocessor11" value="ryzen7_5800x">AMD Ryzen 7 5800X 8-Core-CPU (3,8 GHz - 4,7 GHz/36 MB CACHE/AM4)</option>
+        </optgroup>              
+        <optgroup id="lintelcore_i5" label="INTEL CORE™-i5-PROCESSORS">
+            <option id="oprocessor12" value="i5_12400f">Intel® Core™ i5 6-Core-Processor i5-12400F (bis 4,4 GHz), 18 MB Cache</option>
+            <option id="oprocessor13" value="i5_12400">Intel® Core™ i5 6-Core-Processor i5-12400 (bis 4,4 GHz), 18 MB Cache</option>
+            <option id="oprocessor14" value="i5_14400f">Intel® Core™ i5 10-Core-Processor i5-14400F (4,7 GHz), 20 MB Cache</option>
+            <option id="oprocessor15" value="i5_14400">Intel® Core™ i5 10-Core-Processor i5-14400 (bis 4,7 GHz), 20 MB Cache</option>
+            <option id="oprocessor16" value="i5_12500">Intel® Core™ i5 6-Core-Processor i5-12500 (bis 4,6 GHz), 18 MB Cache</option>
+            <option id="oprocessor17" value="i5_14500">Intel® Core™ i5 14-Core-Processor i5-14500 (bis 5,0 GHz), 24 MB Cache</option>
+            <option id="oprocessor18" value="i5_12600">Intel® Core™ i5 6-Core-Processor i5-12600 (bis 4,8 GHz), 18 MB Cache</option>
+            <option id="oprocessor19" value="i5_14600">Intel® Core™ i5 14-Core-Processor i5-14600 (bis 5,2 GHz), 24 MB Cache</option>
+            <option id="oprocessor20" value="i5_12600kf">Intel® Core™ i5 10-Core-Processor i5-12600KF (bis 4,9GHz) 20 MB Cache</option>
+            <option id="oprocessor21" value="i5_12600k">Intel® Core™ i5 10-Core-Processor i5-12600K (bis 4,9GHz) 20 MB Cache</option>
+            <option id="oprocessor22" value="i5_14600kf">Intel® Core™ i5 14-Core-Processor i5-14600KF (bis 5,3 GHz), 24 MB Cache</option>
+            <option id="oprocessor23" value="i5_14600k">Intel® Core™ i5 14-Core-Processor i5-14600K (bis 5,3 GHz), 24 MB Cache</option>
         </optgroup>        
-        <optgroup label="INTEL CORE™-i3-PROZESSOREN">
-            <option value="i3_12100">Intel® Core™ i3 4-Core-Prozessor i3-12100 (bis 4,30 GHz), 12 MB Cache</option>
-            <option value="i3_12100f">Intel® Core™ i3 4-Core-Prozessor i3-12100F (bis 4,30 GHz), 12 MB Cache</option>
-            <option value="i3_14100f">Intel® Core™ i3 4-Core-Prozessor i3-14100F (bis 4,7 GHz), 12 MB Cache</option>
-            <option value="i3_14100">Intel® Core™ i3 4-Core-Prozessor i3-14100 (bis 4,7 GHz), 12 MB Cache</option>
-        </optgroup>       
-        <optgroup label="INTEL CORE™-i5-PROZESSOREN">
-            <option value="i5_12400f">Intel® Core™ i5 6-Core-Prozessor i5-12400F (bis 4,4 GHz), 18 MB Cache</option>
-            <option value="i5_12400">Intel® Core™ i5 6-Core-Prozessor i5-12400 (bis 4,4 GHz), 18 MB Cache</option>
-            <option value="i5_14400f">Intel® Core™ i5 10-Core-Prozessor i5-14400F (4,7 GHz), 20 MB Cache</option>
-            <option value="i5_14400">Intel® Core™ i5 10-Core-Prozessor i5-14400 (bis 4,7 GHz), 20 MB Cache</option>
-            <option value="i5_12500">Intel® Core™ i5 6-Core-Prozessor i5-12500 (bis 4,6 GHz), 18 MB Cache</option>
-            <option value="i5_14500">Intel® Core™ i5 14-Core-Prozessor i5-14500 (bis 5,0 GHz), 24 MB Cache</option>
-            <option value="i5_12600">Intel® Core™ i5 6-Core-Prozessor i5-12600 (bis 4,8 GHz), 18 MB Cache</option>
-            <option value="i5_14600">Intel® Core™ i5 14-Core-Prozessor i5-14600 (bis 5,2 GHz), 24 MB Cache</option>
-            <option value="i5_12600kf">Intel® Core™ i5 10-Core-Prozessor i5-12600KF (bis 4,9GHz) 20 MB Cache</option>
-            <option value="i5_12600k">Intel® Core™ i5 10-Core-Prozessor i5-12600K (bis 4,9GHz) 20 MB Cache</option>
-            <option value="i5_14600kf">Intel® Core™ i5 14-Core-Prozessor i5-14600KF (bis 5,3 GHz), 24 MB Cache</option>
-            <option value="i5_14600k">Intel® Core™ i5 14-Core-Prozessor i5-14600K (bis 5,3 GHz), 24 MB Cache</option>
-        </optgroup>        
-        <optgroup label="INTEL CORE™-i7-PROZESSOREN">
-            <option value="i7_12700f">Intel® Core™ i7 12-Core-Prozessor i7-12700F (bis 4,9GHz) 25 MB Cache</option>
-            <option value="i7_12700">Intel® Core™ i7 12-Core-Prozessor i7-12700 (bis 4,9GHz) 25 MB Cache</option>
-            <option value="i7_14700f">Intel® Core™ i7 20-Core-Prozessor i7-14700F (bis 5,4GHz) 33 MB Cache</option>
-            <option value="i7_14700">Intel® Core™ i7 20-Core-Prozessor i7-14700 (bis 5,4GHz) 33 MB Cache</option>
+        <optgroup id="lintelcore_i7" label="INTEL CORE™-i7-PROCESSORS">
+            <option id="oprocessor24" value="i7_12700f">Intel® Core™ i7 12-Core-Processor i7-12700F (bis 4,9GHz) 25 MB Cache</option>
+            <option id="oprocessor25"value="i7_12700">Intel® Core™ i7 12-Core-Processor i7-12700 (bis 4,9GHz) 25 MB Cache</option>
+            <option id="oprocessor26" value="i7_14700f">Intel® Core™ i7 20-Core-Processor i7-14700F (bis 5,4GHz) 33 MB Cache</option>
+            <option id="oprocessor27" value="i7_14700">Intel® Core™ i7 20-Core-Processor i7-14700 (bis 5,4GHz) 33 MB Cache</option>
         </optgroup>
         </select>
 <br>
