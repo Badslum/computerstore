@@ -6,3 +6,11 @@ body{background-color:#000000;background-image:url(background1.jpg);background-p
 .bgc_reminder_switch:hover {
     color: #fc0;
 }
+body {
+    background-color: #000000;
+    background-image: url("../custom/images/background1.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #bae1ff;
+}

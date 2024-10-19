@@ -1,0 +1,172 @@
+#settings-main {
+    margin-left: 79px;
+    overflow: hidden;
+    width: 958px;
+}
+
+/* will be dynamically added via JS when rtl & narrow */
+#settings-main.rtl {
+    margin-left: 0;
+    margin-right: 79px;
+}
+
+.span-nav {
+    margin-left: 0;
+    margin-top: 77px;
+    overflow: hidden;
+    width: 64px;
+    position: absolute;
+}
+
+.span-nav span {
+    display: none;
+}
+
+
+.span-main {
+    width: 850px;
+}
+
+.span-nav li {
+    height: 42px;
+    width: 32px;
+}
+
+.span-nav li a {
+    height:20px;
+}
+
+.span-nav i {
+    font-size: 14px;
+}
+
+.nav-list > .active > a:after {
+    /*border: none;*/
+}
+
+.nav-list > .active > a:after,
+.bs-docs-sidenav > li > a:hover:after {
+  /*  display: none;*/
+}
+
+.bs-docs-sidenav {
+    margin-bottom: -2px;
+}
+
+.container {
+    width: 957px;
+}
+
+.bgc div.bgcdw_errors ul {
+    width: 290px;
+}
+
+
+.bgcdw_pwstrength_wrapper {
+    margin-left: 204px;
+    margin-top: 5px;
+    z-index: 200;
+}
+
+
+.bgcdw_pwstrength_bar {
+    height: 6px;
+}
+
+.bgcdw_pwstrength_bar_text {
+    margin-top: -13px;
+}
+
+.settings-header {
+   /* margin-left: 63px;*/
+    width: 957px;
+ }
+
+/************ hover ************/
+
+.span-nav.span-nav-enabled:hover {
+    border: 1px solid #EEE;
+    border-left: none;
+    box-shadow: 8px 8px 8px -9px #000;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    z-index: 2;
+    margin-top: 76px;
+    width: 200px;
+    -webkit-transition: width 0.2s;
+    -moz-transition: width 0.2s;
+    -o-transition: width 0.2s;
+     transition: width 0.2s;
+}
+
+.span-nav.span-nav-enabled:hover li {
+    width: auto;
+}
+
+.span-nav.span-nav-enabled:hover span {
+    display: inline;
+}
+
+.span-nav.span-nav-enabled:hover a {
+    padding-top: 9px;
+    padding-bottom: 11px;
+}
+
+.span-nav.span-nav-enabled:hover .nav-list > .active > a:after,
+.span-nav:hover .bs-docs-sidenav > li > a:hover:after  {
+    display: inline-block;
+}
+
+.span-nav.span-nav-enabled:hover .bs-docs-sidenav.affix {
+    width: 200px;
+    border-right: 1px solid #EEE;
+}
+
+.bs-docs-sidenav.nav-disabled > li {
+    cursor: not-allowed;
+}
+
+.span-main-dialog h3 {
+    font-size: 32px;
+}
+
+.bgc_sudc_passwordreminder_container,
+.bgc_sudc_usernamereminder_container {
+    margin-left: -32px;
+    position: absolute;
+}
+
+.bgc_sudc_noauth_container {
+    margin-left: -50px;
+}
+
+.steps {
+    width: 120%;
+}
+
+.steps .step .step-label {
+    line-height: 17px;
+    margin-top: 7px;
+    width: 230px;
+}
+
+.steps .step {
+    width: 280px;
+}
+
+#externalFormContainer {
+    height: 100%;
+}
+
+#externalFormContainer .span-main {
+    width: unset;
+    margin: 30px;
+}
+
+#externalFormContainer #settings-main {
+    margin-left: 0;
+}
+
+#externalFormContainer .bgc div.bgcdw_errors ul {
+    width: 100%;
+}
