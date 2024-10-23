@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Mein Account</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content=""><meta name="author" content=""><meta http-equiv="X-UA-Compatible" content="IE=edge"><link href="../custom/bootstrap.css" rel="stylesheet"><link rel="stylesheet" href="../custom/all.css"><link rel="stylesheet" href="../custom/fontawesome.all.css"><link rel="stylesheet" href="../custom/accountcenter.css" media="screen"><link rel="stylesheet" href="../custom/accountcenter-narrow.css" media="screen and (max-width: 1200px)"><link rel="stylesheet" href="" id="fallback-narrow"><script src="/assets/js/modernizr.custom.min.js"></script><link href="../custom/bootstrap-toggle-buttons.css" rel="stylesheet"><!-- Fav and touch icons --><link rel="shortcut icon" href="/assets/img/favicon.png"><link id="rtlCss" type="text/css" media="screen" rel="stylesheet" href=""><link id="customCss" type="text/css" media="screen" rel="stylesheet" href="../custom/custom1.css"><link id="customCssNarrow" type="text/css" media="screen and (max-width: 1200px)" rel="stylesheet" href="../custom/custom-narrow.css"><link rel="stylesheet" href="" id="fallback-custom-narrow"><script src="/assets/js/jquery_3.6.0.min.js"></script><script src="/assets/js/jquery-complexify_0.5.2.min.js"></script><script src="/assets/js/jquery-validate_1.19.3.min.js"></script><script src="/assets/js/jquery.toggle.buttons.min.js"></script><script src="/assets/js/accountcenter.min.js"></script><script src="https://js.hcaptcha.com/1/api.js" async defer></script><noscript>
+  <div class="js-warning-wrapper">
+    <div class="js-warning">Bitte aktiviere JavaScript in deinem Browser.</div>
+    <a class="btn" href="/Settings/">Seite neu laden</a>
+  </div>
+</noscript></head><body>
+<div class="bgc_error_translations" style="display:none">
+  <div data-error-key="accountcenter.common.logout">Ausloggen</div>
+</div>
+<div class="container" id="externalFormContainer">
+  <div class="settings-header">
+    <span class="brand">Mein Konto</span>
+
+    <span id="backToFrontPage">
+                    <a id="backToFrontPage" class="navbar-icon disabled-after-click" href="      "> <!-- Hier den Pfad für die Startseite angeben -->
+                    Zur&uuml;ck</a>
+                </span>
+  </div>
+  <div id="settings-navigation"></div>
+  <!--/span-->
+  <div id="settings-main"><div id="bgc_ac_support_form_container" class="bgc_ac_support_container bgc span-main">
+
+    <div class="steps">
+      <div class="bar"></div>
+      <div class="step step-active wide">
+        <div class="step-label">Kontaktformular</div>
+      </div>
+    </div>
+
+
+
+    <form method="post" name="bgc_ac_support_form" id="bgc_ac_support_form" class="form-horizontal" action="   ">  <!-- Zielseite angeben hier mit Link -->
+      <div class="control-group" style="margin-top: 30px;">
+        <label for="bgc_ac_form_support_problem_type" class="control-label">
+          Art der Anfrage</label>
+        <div class="controls">
+          <select id="bgc_ac_form_support_problem_type" name="problemType"><option value="0" selected>Bitte ausw&auml;hlen</option><option value="1">Lieferproblem</option><option value="2">Zahlungsproblem</option><option value="5">Installationsproblem</option><option value="3">Allgemeine Fragen</option></select><div class="bgc_ac_form_help_text"></div>
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="bgc_ac_form_email" class="control-label">
+          E-Mail</label>
+        <div class="controls">
+          <input type="text" id="bgc_ac_form_email" name="email" maxlength="260"></div>
+      </div>
+
+      <div class="control-group">
+        <label for="bgc_ac_form_support_username" class="control-label">
+          Username</label>
+        <div class="controls">
+          <input type="text" id="bgc_ac_form_support_username" name="username" maxlength="45"></div>
+      </div>
+
+      <div class="control-group">
+        <label for="bgc_ac_form_support_userID" class="control-label">
+          Kundennummer</label>
+        <div class="controls">
+          <input type="text" id="bgc_ac_form_support_userID" name="userID" maxlength="10"><div class="bgc_ac_form_help_text">Bitte gib unbedingt Deinen Usernamen und Deine Kundennummer an. Nur so k&ouml;nnen wir die richtige L&ouml;sung f&uuml;r Dein Problem herbeif&uuml;hren und Dir schnell helfen, oder Du loggst Dich ein, dann geht's automatisch!</div>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="bgc_ac_form_support_desc" class="control-label">
+          Beschreibung</label>
+        <div class="controls">
+          <textarea id="bgc_ac_form_support_desc" name="desc" rows="8" cols="50" style="width: 600px; resize: none;"></textarea></div>
+      </div>
+
+      <div class="control-group">
+        <label for="bgc_ac_form_support_captcha" class="control-label">
+          Code</label>
+        <div class="controls">
+          <div id="captcha" class="h-captcha" data-sitekey="c9713f06-5c8c-43c0-84ce-3f0d343c7cad"></div>
+          <input type="hidden" name="captcha"></div>
+      </div>
+
+      <!-- Browser information for the support form -->
+      <input type="hidden" id="cookiesEnabled" name="cookiesEnabled" value="0"><input type="hidden" id="flashEnabled" name="flashEnabled" value="0"><input type="hidden" id="flashVersion" name="flashVersion" value="0"><input type="submit" name="support_submit" class="btn btn-primary" value="Absenden"></form>
+    <script src="/assets/js/support.min.js"></script></div>
+  </div>
+
+</div><!--/.container-->
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46086451-1', 'bpsecure.com');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script><!-- End Google Analytics --></body></html>

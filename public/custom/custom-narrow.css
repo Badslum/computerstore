@@ -1,0 +1,7 @@
+#bgc_ac_support_form_container {
+    background-image: url('../custom/images/background1.jpg'); /* Pfad zu deinem Bild */
+    background-size: cover; /* Passt das Bild an die Größe des Containers an */
+    background-position: center; /* Zentriert das Bild */
+    background-repeat: no-repeat; /* Verhindert das wiederholte Anzeigen des Bildes */
+    padding: 20px; /* Optional: Abstand vom Container-Inhalt zum Rand */
+}
