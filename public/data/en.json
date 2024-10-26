@@ -110,7 +110,7 @@
     "ossd75": "1 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)",
     "ossd76": "2 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)",
     "ossd77": "4 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)",
-   "lsd1": "1. Storage drive",
+    "lsd1": "1. Storage drive",
     "osd80": "NONE",
     "osd81": "256 GB PCS 2,5 SSD, SATA 6 Gb (up to 500 MB/R, 400 MB/W)",
     "osd82": "480 GB-KINGSTON A400, 2,5 SSD, SATA 6 Gb (500 MB/R, 450 MB/W)",
