@@ -4,28 +4,27 @@
 <meta charset="Utf-8">
 <link href="../custom/style.css" type="text/css" rel="stylesheet">
 <script src="../private/main.js"></script>
-<script src="../private/calc.js"></script>
 </head>
 <body>
-    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" target="_blank">
+   <!--<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" target="_blank">--> 
     <div><h1 id="h1case"> Select a computer case</h1>   
     <div id="cat18" name="cat18" class="case_selector">
         <div class="scrollbar-inner">
             <div class="case-inner-holder">
                 <div class="case-item" data-case-b="13">
-                    <input checked="" type="radio" name="case" data-friendly-name="case" id="case1" value="case1" style="border:0px;" onclick="running_total('808','pc','','18');update_pic(this.value, 'pc');">Galaxy Shadow – 30 €
+                    <input checked="" type="radio" name="case"  id="case1" value="case1">Galaxy Shadow – 30 €
                 </div>
                 <div class="case-item" data-case-b="13">
-                    <input type="radio" name="case" data-friendly-name="case" id="case2" value="case2" style="border:0px;" onclick="running_total('808','pc','','18');update_pic(this.value, 'pc');">Element Xtreme – 33 €
+                    <input type="radio" name="case" id="case2" value="case2">Element Xtreme – 33 €
                 </div>
                 <div class="case-item" data-case-b="13">
-                    <input type="radio" name="case" data-friendly-name="casee" id="case3" value="case3" style="border:0px;" onclick="running_total('808','pc','','18');update_pic(this.value, 'pc');">Pulse Storm – 38 €
+                    <input type="radio" name="case" id="case3" value="case3">Pulse Storm – 38 €
                 </div>
                 <div class="case-item" data-case-b="13">
-                    <input type="radio" name="case" data-friendly-name="case" id="case4" value="case4" style="border:0px;" onclick="running_total('808','pc','','18');update_pic(this.value, 'pc');">Prism Fury ARGB – 53 €
+                    <input type="radio" name="case" id="case4" value="case4">Prism Fury ARGB – 53 €
                 </div>
                 <div class="case-item" data-case-b="13">
-                    <input type="radio" name="case" data-friendly-name="case" id="case5" value="case5" style="border:0px;" onclick="running_total('808','pc','','18');update_pic(this.value, 'pc');">Spectrum Nova ARGB – 65 €
+                    <input type="radio" name="case" id="case5" value="case5">Spectrum Nova ARGB – 65 €
                 </div>
             </div>
         </div>
@@ -78,232 +77,233 @@
 <br>
         <label id="lmainboard" for="mainboard"> Mainboard </label> <br>
         <select id="mainboard" name="mainboard">
-            <option id="om1" value="1">GIGABYTE A520M K V2 (mATX, AM4, DDR4, PCIe 3.0)</option> 
-            <option id="om2" value="2">GIGABYTE B550M DS3H (mATX, DDR4, AM4, PCIe 4.0)</option> 
-            <option id="om3" value="3">GIGABYTE B550 GAMING X V2 (AM4, DDR4, PCIe 4.0) </option> 
-            <option id="om4" value="4">ASUS® PRIME A520M-K (mATX, AM4, DDR4, PCIe 3.0) </option>
-            <option id="om5" value="5">ASUS® PRIME B550-PLUS (AM4, DDR4, PCIe 4.0)</option> 
-            <option id="om6" value="6"> ASUS® TUF GAMING B550-PLUS (AM4, DDR4, PCIe 4.0)</option>        
+            <option id="om1" value="m1">GIGABYTE A520M K V2 (mATX, AM4, DDR4, PCIe 3.0)</option> 
+            <option id="om2" value="m2">GIGABYTE B550M DS3H (mATX, DDR4, AM4, PCIe 4.0)</option> 
+            <option id="om3" value="m3">GIGABYTE B550 GAMING X V2 (AM4, DDR4, PCIe 4.0) </option> 
+            <option id="om4" value="m4">ASUS® PRIME A520M-K (mATX, AM4, DDR4, PCIe 3.0) </option>
+            <option id="om5" value="m5">ASUS® PRIME B550-PLUS (AM4, DDR4, PCIe 4.0)</option> 
+            <option id="om6" value="m6"> ASUS® TUF GAMING B550-PLUS (AM4, DDR4, PCIe 4.0)</option>        
         </select>         
 <br>
         <label id="lram" for="ram"> Random-access memory  </label> <br>
         <select id="ram" name="ram">
-            <option id="or11" value="11">8 GB PCS PRO DDR4 3200 MHz (1 x 8 GB) </option> 
-            <option id="or12" value="12">16 GB PCS PRO DDR4 3200 MHz (1 x 16 GB)</option> 
-            <option id="or13" value="13">16 GB PCS PRO DDR4 3200 MHz (2 x 8 GB)  </option> 
-            <option id="or14" value="14">32 GB PCS PRO DDR4 3200 MHz (1 x 32 GB) </option>
-            <option id="or15" value="15">32 GB PCS PRO DDR4 3200 MHz (2 x 16 GB)</option> 
-            <option id="or16" value="16">64 GB PCS PRO DDR4 3200 MHz (2 x 32 GB)</option>
-            <option id="or17" value="17">64 GB PCS PRO DDR4 3200 MHz (4 x 16 GB) </option>
-            <option id="or18" value="18">128 GB PCS PRO DDR4 3200 MHz (4 x 32 GB)</option>
+            <option id="or11" value="r11">8 GB PCS PRO DDR4 3200 MHz (1 x 8 GB) </option> 
+            <option id="or12" value="r12">16 GB PCS PRO DDR4 3200 MHz (1 x 16 GB)</option> 
+            <option id="or13" value="r13">16 GB PCS PRO DDR4 3200 MHz (2 x 8 GB)  </option> 
+            <option id="or14" value="r14">32 GB PCS PRO DDR4 3200 MHz (1 x 32 GB) </option>
+            <option id="or15" value="r15">32 GB PCS PRO DDR4 3200 MHz (2 x 16 GB)</option> 
+            <option id="or16" value="r16">64 GB PCS PRO DDR4 3200 MHz (2 x 32 GB)</option>
+            <option id="or17" value="r17">64 GB PCS PRO DDR4 3200 MHz (4 x 16 GB) </option>
+            <option id="or18" value="r18">128 GB PCS PRO DDR4 3200 MHz (4 x 32 GB)</option>
         </select>        
  <br>
         <label id="lgpu" for="gpu">Graficscard</label> <br>
         <select id="gpu_selection" name="gpu_selection">
             <!-- Niedrigere NVIDIA-Grafikkarten -->
-            <option id="og21" value="21" data-friendly-name="graficscard" selected>1 GB NVIDIA GEFORCE GT 710 – DVI, HDMI, VGA – 40 €</option>
-            <option id="og22" value="22" data-friendly-name="graficscard">2 GB NVIDIA GEFORCE GT 730 – DVI, HDMI, VGA – 50 €</option>
-            <option id="og23" value="23" data-friendly-name="graficscard">2 GB ASUS GEFORCE GT 730 – 4 ANZEIGE – 4 x HDMI – 55 €</option>
-            <option id="og24" value="24" data-friendly-name="graficscard">2 GB NVIDIA GEFORCE GT 1030 – DVI, HDMI – 60 €</option>        
+            <option id="og21" value="g21" data-friendly-name="graficscard" selected>1 GB NVIDIA GEFORCE GT 710 – DVI, HDMI, VGA – 40 €</option>
+            <option id="og22" value="g22" data-friendly-name="graficscard">2 GB NVIDIA GEFORCE GT 730 – DVI, HDMI, VGA – 50 €</option>
+            <option id="og23" value="g23" data-friendly-name="graficscard">2 GB ASUS GEFORCE GT 730 – 4 ANZEIGE – 4 x HDMI – 55 €</option>
+            <option id="og24" value="g24" data-friendly-name="graficscard">2 GB NVIDIA GEFORCE GT 1030 – DVI, HDMI – 60 €</option>        
             <!-- NVIDIA RTX 30-Serie -->
             <optgroup label="NVIDIA® GEFORCE® RTX 30-SERIE (PALIT / ZOTAC)">
-                <option id="og25" value="25" data-friendly-name="graficscard">6 GB NVIDIA GEFORCE RTX 3050 – HDMI, DP, LHR – 300 €</option>
-                <option id="og26" value="26" data-friendly-name="graficscard">8 GB NVIDIA GEFORCE RTX 3050 – HDMI, DP, LHR – 350 €</option>
-                <option id="og27" value="27" data-friendly-name="graficscard">12 GB NVIDIA GEFORCE RTX 3060 – HDMI, DP, LHR – 400 €</option>
+                <option id="og25" value="g25" data-friendly-name="graficscard">6 GB NVIDIA GEFORCE RTX 3050 – HDMI, DP, LHR – 300 €</option>
+                <option id="og26" value="g26" data-friendly-name="graficscard">8 GB NVIDIA GEFORCE RTX 3050 – HDMI, DP, LHR – 350 €</option>
+                <option id="og27" value="g27" data-friendly-name="graficscard">12 GB NVIDIA GEFORCE RTX 3060 – HDMI, DP, LHR – 400 €</option>
             </optgroup>
             <!-- NVIDIA RTX 40-Serie -->
             <optgroup label="NVIDIA® GEFORCE® RTX 40-SERIE (PALIT / ZOTAC)">
-                <option id="og28" value="28" data-friendly-name="graficscard">8 GB NVIDIA GEFORCE RTX 4060 – HDMI, DP, LHR – 500 €</option>
-                <option id="og29" value="29" data-friendly-name="graficscard">16 GB NVIDIA GEFORCE RTX 4060 Ti – HDMI, DP, LHR – 600 €</option>
+                <option id="og28" value="g28" data-friendly-name="graficscard">8 GB NVIDIA GEFORCE RTX 4060 – HDMI, DP, LHR – 500 €</option>
+                <option id="og29" value="g29" data-friendly-name="graficscard">16 GB NVIDIA GEFORCE RTX 4060 Ti – HDMI, DP, LHR – 600 €</option>
             </optgroup>
             <!-- AMD Radeon-Grafikkarten -->
             <optgroup id="lAMD" label="AMD® RADEON-GRAFICCARDS">
-                <option id="og30" value="30" data-friendly-name="graficscard">4 GB AMD RADEON™ RX 6500 XT – HDMI, DP – 150 €</option>
-                <option id="og31" value="31" data-friendly-name="graficscard">8 GB AMD RADEON™ RX 6600 – HDMI, DP – 200 €</option>
+                <option id="og30" value="g30" data-friendly-name="graficscard">4 GB AMD RADEON™ RX 6500 XT – HDMI, DP – 150 €</option>
+                <option id="og31" value="g31" data-friendly-name="graficscard">8 GB AMD RADEON™ RX 6600 – HDMI, DP – 200 €</option>
             </optgroup>
             <!--Andere optionen -->
-            <option id="og20" value="none" data-friendly-name="graficscard">NONE; I ALREADY OWN A GRAPICSCARD – 0 €</option>
+            <option id="og20" value="g20" data-friendly-name="graficscard">NONE; I ALREADY OWN A GRAPICSCARD – 0 €</option>
         </select>
  <br>
-        <label id="gpu-bracket" for="gpu-bracket"> Gpu-bracket </label> <br>
-        <select id="gpu-bracket" name="gpu-bracket">
-            <option id="ogp32" value="32">NONE (INCLUDED FOR 4070 Ti / RX 7700 XT AND HIGHER)  </option> 
-            <option id="ogp33" value="33">PCS GRAFIC BRACKET (9 €) </option> 
-            <option id="ogp34" value="34">PCS ARGB GRAFIC BRACKET (14 €)  </option> 
+        <label id="gpu_bracket" for="gpu_bracket"> Gpu-bracket </label> <br>
+        <select id="gpu_bracket" name="gpu_bracket">
+            <option id="ogp32" value="g32">NONE (INCLUDED FOR 4070 Ti / RX 7700 XT AND HIGHER)  </option> 
+            <option id="ogp33" value="g33">PCS GRAFIC BRACKET (9 €) </option> 
+            <option id="ogp34" value="g34">PCS ARGB GRAFIC BRACKET (14 €)  </option> 
         </select>
     </div>              
 
  <h1 id="h1drives">Hard drives, optical storage, &amp; memory card readers</h1>                                                      
  <label id="lssd_drive1" for="ssd_drive1">1. M.2 SSD drive</label><br>
      <select  name="ssd_drive1" id="ssd_drive1">
-         <option id="ossd40" value="40">NONE</option>        
+         <option id="ossd40" value="ssd40">NONE</option>        
          <optgroup label="-----------PCIe M.2 SSD-----------">
-             <option id="ossd41" value="41">256 GB PCS PCIe SSD M.2 (up to 3200 MB/R, 2700MB/W)</option>
-             <option id="ossd42" value="42">512 GB PCS PCIe SSD M.2 (up to 2200 MB/R, 1500 MB/W)</option>
-             <option id="ossd43" value="43">1 TB PCS PCIe SSD M.2 (up to 3500 MB/R, 3200 MB/W)</option>
+             <option id="ossd41" value="ssd41">256 GB PCS PCIe SSD M.2 (up to 3200 MB/R, 2700MB/W)</option>
+             <option id="ossd42" value="ssd42">512 GB PCS PCIe SSD M.2 (up to 2200 MB/R, 1500 MB/W)</option>
+             <option id="ossd43" value="ssd43">1 TB PCS PCIe SSD M.2 (up to 3500 MB/R, 3200 MB/W)</option>
          </optgroup>         
          <optgroup label="-----------SOLIDIGM P41+ GEN 4 SERIE M.2 SSD-----------">
-             <option id="ossd44" value="44">512 GB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 3500 MB/sR, 1625 MB/sW)</option>
-             <option id="ossd45" value="45">1 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 4125 MB/sR, 2950 MB/sW)</option>
-             <option id="ossd46" value="46">2 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 4125 MB/sR, 3325 MB/sW)</option>
+             <option id="ossd44" value="ssd44">512 GB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 3500 MB/sR, 1625 MB/sW)</option>
+             <option id="ossd45" value="ssd45">1 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 4125 MB/sR, 2950 MB/sW)</option>
+             <option id="ossd46" value="ssd46">2 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 4125 MB/sR, 3325 MB/sW)</option>
          </optgroup>        
          <optgroup label="-----------SOLIDIGM P44 PRO GEN 4 SERIES M.2 SSD-----------">
-             <option id="ossd47" value="47">512 GB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 4700 MB/sW)</option>
-             <option id="ossd48" value="48">1 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 6500 MB/sW)</option>
-             <option id="ossd49" value="49">2 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 6500 MB/sW)</option>
+             <option id="ossd47" value="ssd47">512 GB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 4700 MB/sW)</option>
+             <option id="ossd48" value="ssd48">1 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 6500 MB/sW)</option>
+             <option id="ossd49" value="ssd49">2 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 6500 MB/sW)</option>
          </optgroup>         
          <optgroup label="-----------CORSAIR NVMe PCIe M.2 SSD-----------">
-             <option id="ossd50" value="50">1 TB CORSAIR FORCE MP600 NVMe PCIe M.2 SSD (up to 4950 MB/R, 4000 MB/W)</option>
-             <option id="ossd51" value="51">2 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD (up to 5000 MB/R, 4400 MB/W)</option>
-             <option id="ossd52" value="52">4 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD (up to 5000 MB/R, 4400 MB/W)</option>
-             <option id="ossd53" value="53">4 TB CORSAIR MP600 PRO NVMe PCIe M.2 SSD (up to 7000 MB/R, 6850 MB/W)</option>
-             <option id="ossd54" value="54">8 TB CORSAIR MP600 PRO NH NVMe PCIe M.2 SSD (up to 7000 MB/R, 6100 MB/W)</option>
+             <option id="ossd50" value="ssd50">1 TB CORSAIR FORCE MP600 NVMe PCIe M.2 SSD (up to 4950 MB/R, 4000 MB/W)</option>
+             <option id="ossd51" value="ssd51">2 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD (up to 5000 MB/R, 4400 MB/W)</option>
+             <option id="ossd52" value="ssd52">4 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD (up to 5000 MB/R, 4400 MB/W)</option>
+             <option id="ossd53" value="ssd53">4 TB CORSAIR MP600 PRO NVMe PCIe M.2 SSD (up to 7000 MB/R, 6850 MB/W)</option>
+             <option id="ossd54" value="ssd54">8 TB CORSAIR MP600 PRO NH NVMe PCIe M.2 SSD (up to 7000 MB/R, 6100 MB/W)</option>
          </optgroup>
          <optgroup label="-----------SAMSUNG 990 PRO SERIE M.2 SSD-----------">
-             <option id="ossd55" value="55">1 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
-             <option id="ossd56" value="56">2 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
-             <option id="ossd57" value="57">4 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
+             <option id="ossd55" value="ssd55">1 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
+             <option id="ossd56" value="ssd56">2 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
+             <option id="ossd57" value="ssd57">4 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
          </optgroup>
      </select>
 <br>
  <label id="lssd_drive2" for="ssd_drive2">2. M.2 SSD drive</label><br>
     <select name="ssd_drive2" id="ssd_drive2">
-        <option id="ossd60" value="60">NONE</option>        
+        <option id="ossd60" value="ssd60">NONE</option>        
         <optgroup label="-----------PCIe M.2 SSD-----------">
-            <option id="ossd61" value="61">256 GB PCS PCIe SSD M.2 (up to 3200 MB/R, 2700MB/W)</option>
-            <option id="ossd62" value="62">512 GB PCS PCIe SSD M.2 (up to 2200 MB/R, 1500 MB/W)</option>
-            <option id="ossd63" value="63">1 TB PCS PCIe SSD M.2 (up to 3500 MB/R, 3200 MB/W)</option>
+            <option id="ossd61" value="ssd61">256 GB PCS PCIe SSD M.2 (up to 3200 MB/R, 2700MB/W)</option>
+            <option id="ossd62" value="ssd62">512 GB PCS PCIe SSD M.2 (up to 2200 MB/R, 1500 MB/W)</option>
+            <option id="ossd63" value="ssd63">1 TB PCS PCIe SSD M.2 (up to 3500 MB/R, 3200 MB/W)</option>
         </optgroup>        
         <optgroup label="-----------SOLIDIGM P41+ GEN 4 SERIE M.2 SSD-----------">
-            <option id="ossd64" value="64">512 GB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 3500 MB/sR, 1625 MB/sW)</option>
-            <option id="ossd65" value="65">1 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 4125 MB/sR, 2950 MB/sW)</option>
-            <option id="ossd66" value="66">2 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 4125 MB/sR, 3325 MB/sW)</option>
+            <option id="ossd64" value="ssd64">512 GB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 3500 MB/sR, 1625 MB/sW)</option>
+            <option id="ossd65" value="ssd65">1 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 4125 MB/sR, 2950 MB/sW)</option>
+            <option id="ossd66" value="ssd66">2 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 4125 MB/sR, 3325 MB/sW)</option>
         </optgroup>       
         <optgroup label="-----------SOLIDIGM P44 PRO GEN 4 SERIES M.2 SSD-----------">
-            <option id="ossd67" value="67">512 GB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 4700 MB/sW)</option>
-            <option id="ossd68" value="68">1 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 6500 MB/sW)</option>
-            <option id="ossd69" value="69">2 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 6500 MB/sW)</option>
+            <option id="ossd67" value="ssd67">512 GB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 4700 MB/sW)</option>
+            <option id="ossd68" value="ssd68">1 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 6500 MB/sW)</option>
+            <option id="ossd69" value="ssd69">2 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 6500 MB/sW)</option>
         </optgroup>        
         <optgroup label="-----------CORSAIR NVMe PCIe M.2 SSD-----------">
-            <option id="ossd70" value="70">1 TB CORSAIR FORCE MP600 NVMe PCIe M.2 SSD (up to 4950 MB/R, 4000 MB/W)</option>
-            <option id="ossd71" value="71">2 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD (up to 5000 MB/R, 4400 MB/W)</option>
-            <option id="ossd72" value="72">4 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD (up to 5000 MB/R, 4400 MB/W)</option>
-            <option id="ossd73" value="73">4 TB CORSAIR MP600 PRO NVMe PCIe M.2 SSD (up to 7000 MB/R, 6850 MB/W)</option>
-            <option id="ossd74" value="74">8 TB CORSAIR MP600 PRO NH NVMe PCIe M.2 SSD (up to 7000 MB/R, 6100 MB/W)</option>
+            <option id="ossd70" value="ssd70">1 TB CORSAIR FORCE MP600 NVMe PCIe M.2 SSD (up to 4950 MB/R, 4000 MB/W)</option>
+            <option id="ossd71" value="ssd71">2 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD (up to 5000 MB/R, 4400 MB/W)</option>
+            <option id="ossd72" value="ssd72">4 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD (up to 5000 MB/R, 4400 MB/W)</option>
+            <option id="ossd73" value="ssd73">4 TB CORSAIR MP600 PRO NVMe PCIe M.2 SSD (up to 7000 MB/R, 6850 MB/W)</option>
+            <option id="ossd74" value="ssd74">8 TB CORSAIR MP600 PRO NH NVMe PCIe M.2 SSD (up to 7000 MB/R, 6100 MB/W)</option>
         </optgroup>       
         <optgroup label="-----------SAMSUNG 990 PRO SERIE M.2 SSD-----------">
-            <option id="ossd75" value="75">1 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
-            <option id="ossd76" value="76">2 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
-            <option id="ossd77" value="77">4 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
+            <option id="ossd75" value="ssd75">1 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
+            <option id="ossd76" value="ssd76">2 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
+            <option id="ossd77" value="ssd77">4 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
         </optgroup>
     </select>
 </span>
 <br>   
 <label id="lsd1" for="storage_drive1">1. Storage drive</label><br>
     <select name="storage_drive1" id="storage_drive1">
-        <option id="osd80" value="80">NONE</option>
+        <option id="osd80" value="sd80">NONE</option>
         <optgroup label="STANDARD 2,5">
-            <option id="osd81" value="81">256 GB PCS 2,5 SSD, SATA 6 Gb (up to 500 MB/R, 400 MB/W)</option>
-            <option id="osd82" value="82">480 GB-KINGSTON A400, 2,5 SSD, SATA 6 Gb (500 MB/R, 450 MB/W)</option>
-            <option id="osd83" value="83">960 GB-KINGSTON A400, 2,5 SSD, SATA 6 Gb (500 MB/R, 450 MB/W)</option>
+            <option id="osd81" value="sd81">256 GB PCS 2,5 SSD, SATA 6 Gb (up to 500 MB/R, 400 MB/W)</option>
+            <option id="osd82" value="sd82">480 GB-KINGSTON A400, 2,5 SSD, SATA 6 Gb (500 MB/R, 450 MB/W)</option>
+            <option id="osd83" value="sd83">960 GB-KINGSTON A400, 2,5 SSD, SATA 6 Gb (500 MB/R, 450 MB/W)</option>
         </optgroup>
         <optgroup label="STANDARD 3,5">
-            <option id="osd84" value="84">3,5-HDD SEAGATE BARRACUDA SATA-III, 1 TB, 6 GB/s, 7.200 U/min, 256 MB CACHE</option>
-            <option id="osd85" value="85">2 TB SEAGATE BARRACUDA SATA-III 3,5 HDD, 6 GB/s, 7200 RPM, 256 MB CACHE</option>
-            <option id="osd86" value="86">3 TB SATA-III 3,5-HDD, 6 GB/s, 7200 RPM, 64 MB CACHE</option>
-            <option id="osd87" value="87">4 TB SEAGATE BARRACUDA SATA-III 3,5 HDD, 6 GB/s, 5400 RPM, 256 MB CACHE</option>
-            <option id="osd88" value="88">6 TB SEAGATE BARRACUDA SATA-III 3,5 HDD, 6 GB/s, 5400 RPM, 256 MB CACHE</option>
-            <option id="osd89" value="89">3,5-HDD SEAGATE BARRACUDA SATA-III, 8 TB, 6 GB/s, 5.400 RPM, 256 MB CACHE</option>
+            <option id="osd84" value="sd84">3,5-HDD SEAGATE BARRACUDA SATA-III, 1 TB, 6 GB/s, 7.200 U/min, 256 MB CACHE</option>
+            <option id="osd85" value="sd85">2 TB SEAGATE BARRACUDA SATA-III 3,5 HDD, 6 GB/s, 7200 RPM, 256 MB CACHE</option>
+            <option id="osd86" value="sd86">3 TB SATA-III 3,5-HDD, 6 GB/s, 7200 RPM, 64 MB CACHE</option>
+            <option id="osd87" value="sd87">4 TB SEAGATE BARRACUDA SATA-III 3,5 HDD, 6 GB/s, 5400 RPM, 256 MB CACHE</option>
+            <option id="osd88" value="sd88">6 TB SEAGATE BARRACUDA SATA-III 3,5 HDD, 6 GB/s, 5400 RPM, 256 MB CACHE</option>
+            <option id="osd89" value="sd89">3,5-HDD SEAGATE BARRACUDA SATA-III, 8 TB, 6 GB/s, 5.400 RPM, 256 MB CACHE</option>
         </optgroup>
     </select>
 <br>      
     <label id="lsd2" for="storage_drive2">2. Storage drive</label><br>
     <select name="storage_drive2" id="storage_drive2">
-        <option id="osd90" value="90">NONE</option>
+        <option id="osd90" value="sd90">NONE</option>
         <optgroup label="STANDARD 2,5">
-            <option id="osd91" value="91">256 GB PCS 2,5 SSD, SATA 6 Gb (up to 500 MB/R, 400 MB/W)</option>
-            <option id="osd92" value="92">480 GB-KINGSTON A400, 2,5 SSD, SATA 6 Gb (500 MB/R, 450 MB/W)</option>
-            <option id="osd93" value="93">960 GB-KINGSTON A400, 2,5 SSD, SATA 6 Gb (500 MB/R, 450 MB/W)</option>
+            <option id="osd91" value="sd91">256 GB PCS 2,5 SSD, SATA 6 Gb (up to 500 MB/R, 400 MB/W)</option>
+            <option id="osd92" value="sd92">480 GB-KINGSTON A400, 2,5 SSD, SATA 6 Gb (500 MB/R, 450 MB/W)</option>
+            <option id="osd93" value="sd93">960 GB-KINGSTON A400, 2,5 SSD, SATA 6 Gb (500 MB/R, 450 MB/W)</option>
         </optgroup>
         <optgroup label="STANDARD 3,5">
-            <option id="osd94" value="94">3,5-HDD SEAGATE BARRACUDA SATA-III, 1 TB, 6 GB/s, 7.200 U/min, 256 MB CACHE</option>
-            <option id="osd95" value="95">2 TB SEAGATE BARRACUDA SATA-III 3,5 HDD, 6 GB/s, 7200 RPM, 256 MB CACHE</option>
-            <option id="osd96" value="96">3 TB SATA-III 3,5-HDD, 6 GB/s, 7200 RPM, 64 MB CACHE</option>
-            <option id="osd97" value="97">4 TB SEAGATE BARRACUDA SATA-III 3,5 HDD, 6 GB/s, 5400 RPM, 256 MB CACHE</option>
-            <option id="osd98" value="98">6 TB SEAGATE BARRACUDA SATA-III 3,5 HDD, 6 GB/s, 5400 RPM, 256 MB CACHE</option>
-            <option id="osd99" value="99">3,5-HDD SEAGATE BARRACUDA SATA-III, 8 TB, 6 GB/s, 5.400 RPM, 256 MB CACHE</option>
+            <option id="osd94" value="sd94">3,5-HDD SEAGATE BARRACUDA SATA-III, 1 TB, 6 GB/s, 7.200 U/min, 256 MB CACHE</option>
+            <option id="osd95" value="sd95">2 TB SEAGATE BARRACUDA SATA-III 3,5 HDD, 6 GB/s, 7200 RPM, 256 MB CACHE</option>
+            <option id="osd96" value="sd96">3 TB SATA-III 3,5-HDD, 6 GB/s, 7200 RPM, 64 MB CACHE</option>
+            <option id="osd97" value="sd97">4 TB SEAGATE BARRACUDA SATA-III 3,5 HDD, 6 GB/s, 5400 RPM, 256 MB CACHE</option>
+            <option id="osd98" value="sd98">6 TB SEAGATE BARRACUDA SATA-III 3,5 HDD, 6 GB/s, 5400 RPM, 256 MB CACHE</option>
+            <option id="osd99" value="sd99">3,5-HDD SEAGATE BARRACUDA SATA-III, 8 TB, 6 GB/s, 5.400 RPM, 256 MB CACHE</option>
         </optgroup>
     </select>
 <br>
 <label id="ldvd" for="dvd">DVD/BLU-RAY-Drive</label><br>
     <select name="dvd" id="dvd">
-        <option id="odvd100" value="100">NONE NEEDED</option>
-        <option id="odvd101" value="101">24 x DUAL LAYER-DVD-BURNER ±R/±RW/RAM</option>
-        <option id="odvd102" value="102">16 x BLU-RAY BURNER-DRIVE, 16 x DVD ±R/±RW &amp; SOFTWARE</option>
+        <option id="odvd100" value="dvd100">NONE NEEDED</option>
+        <option id="odvd101" value="dvd101">24 x DUAL LAYER-DVD-BURNER ±R/±RW/RAM</option>
+        <option id="odvd102" value="dvd102">16 x BLU-RAY BURNER-DRIVE, 16 x DVD ±R/±RW &amp; SOFTWARE</option>
     </select>
 <br>
 <label id="ledvd" for="externdvd">External DVD/BLU-RAY-Drive</label><br>
 <select  name="externdvd"  id="externdvd">
-    <option id="odvd105" value="105">NONE</option>
-    <option id="odvd106" value="106">External DVD-RW Slim USB 2.0 (26 €)</option>
-    <option id="odvd107" value="107">6 x External Slim USB 2.0-Blu-Ray-Burner (118 €)</option>
+    <option id="odvd105" value="edvd105">NONE</option>
+    <option id="odvd106" value="edvd106">External DVD-RW Slim USB 2.0 (26 €)</option>
+    <option id="odvd107" value="edvd107">6 x External Slim USB 2.0-Blu-Ray-Burner (118 €)</option>
 </select>                                                                                                                                    
 <br>
 <label id="lexdrive" for="externaldrive">External hard drive</label><br>
 <select name="externaldrive"  id="externaldrive">
-    <option id="oed110" value="110">NONE</option>
-    <option id="oed111" value="111">External hard drive 10 TB Seagate Expansion, USB 3.0, Black (240 €)</option>
-    <option id="oed112" value="112">External hard drive 4 TB Seagate Expansion, USB 3.0, Black (118 €)</option>
-    <option id="oed113" value="113">External hard drive 8 TB Seagate Expansion, USB 3.0, Black (178 €)</option>
+    <option id="oed110" value="ed110">NONE</option>
+    <option id="oed111" value="ed111">External hard drive 10 TB Seagate Expansion, USB 3.0, Black (240 €)</option>
+    <option id="oed112" value="ed112">External hard drive 4 TB Seagate Expansion, USB 3.0, Black (118 €)</option>
+    <option id="oed113" value="ed113">External hard drive 8 TB Seagate Expansion, USB 3.0, Black (178 €)</option>
 </select>                                                                                                                                                                                                                                                                                                                                                            
-                                                                                                                                                                      
+         
+    <!--continue here-->                                                                                                                                                                       
 <h1 id="h1pandc">Power and Cooling</h1>                                                                                                                                                                                                      
  <label id="lpc" for="powercable">Power cable</label><br>
  <select name="powercable" id="powercable">
-        <option id="opc115" value="115">1 x European power cable, 1,5 meter</option>
-        <option id="opc116" value="116">1 x Swiss power cable, 1,5 meter</option>
-        <option id="opc117" value="117">1 x British power cable, 1,5 meter</option> 
-        <option id="opc118" value="118">1 x USA power cable, 1,5 meter</option>
+        <option id="opc115" value="pc115">1 x European power cable, 1,5 meter</option>
+        <option id="opc116" value="pc116">1 x Swiss power cable, 1,5 meter</option>
+        <option id="opc117" value="pc117">1 x British power cable, 1,5 meter</option> 
+        <option id="opc118" value="pc118">1 x USA power cable, 1,5 meter</option>
 </select>
 <br>                                                                                                                                                                                                             
 <label id="cpuc" for="cpucoolers">CPU coolers</label><br>
     <select name="cpucoolers" id="cpucoolers">
-        <option id="ocpuc120" value="120">STANDARD-CPU coolers LGA1700 (95W TDP) (6 €)</option>
-        <option id="ocpuc121" value="121">HIGH-PERFORMANCE-CPU coolers  FrostFlow 100 V3-Serie (120W TDP) (23 €)</option>
-        <option id="ocpuc122" value="122">HIGH-PERFORMANCE-CPU coolers  FrostFlow 200-Serie (250W TDP) (54 €)</option>
+        <option id="ocpuc120" value="cpuc120">STANDARD-CPU coolers LGA1700 (95W TDP) (6 €)</option>
+        <option id="ocpuc121" value="cpuc121">HIGH-PERFORMANCE-CPU coolers  FrostFlow 100 V3-Serie (120W TDP) (23 €)</option>
+        <option id="ocpuc122" value="cpuc122">HIGH-PERFORMANCE-CPU coolers  FrostFlow 200-Serie (250W TDP) (54 €)</option>
     </select>
 <br>                                                                                                                                                           
-<label id="lhcp" for="heatconductingpaste">Heat-conducting paste</label><br>
+<label id="lhcp" for="heatconductingpaste">Heat conducting paste</label><br>
     <select name="heatconductingpaste" id="heatconductingpaste">
-        <option id="hcp125" value="125">THERMAL STANDARD HEAT-CONDUNCTING PASTE</option>
-        <option id="hcp126" value="126">ARKTIC MX-4 EXTREM HEAT-CONDUNCTING PASTE (11 €)</option>
+        <option id="ohcp125" value="hcp125">THERMAL STANDARD HEAT-CONDUNCTING PASTE</option>
+        <option id="ohcp126" value="hcp126">ARKTIC MX-4 EXTREM HEAT-CONDUNCTING PASTE (11 €)</option>
     </select>
 <br>
                                                                                                                                                                                                                                                                                                                                                                                     
 <h1 id="h1os">Select your operating system & your software</h1>
 <label id="los" for="os">Operating system</label> <br>
     <select name="os" id="os">
-        <option id="oos130" value="130">Windows 11 Home 64 Bit – incl. single license</option>
-        <option id="oos131" value="131">Windows 11 Professional 64 Bit – incl. single license</option>
-        <option id="oos132" value="132">NO OPERATING SYSTEM NEEDED</option>
+        <option id="oos130" value="os130">Windows 11 Home 64 Bit – incl. single license</option>
+        <option id="oos131" value="os131">Windows 11 Professional 64 Bit – incl. single license</option>
+        <option id="oos132" value="os132">NO OPERATING SYSTEM NEEDED</option>
     </select>
 <br>
 <label id="llanguage" for="language">Language</label> <br>
     <select name="language" id="language">
-        <option id="ol135" value="135">United Kingdom – English</option>
-        <option id="ol136" value="136" selected>Germany – German</option>
-        <option id="ol137" value="137">Italy – Italian</option>
-        <option id="ol138" value="138">Spain – Spanish</option>
-        <option id="ol139" value="139">Sweden – Swedish</option>
+        <option id="ol135" value="l135">United Kingdom – English</option>
+        <option id="ol136" value="l136" selected>Germany – German</option>
+        <option id="ol137" value="l137">Italy – Italian</option>
+        <option id="ol138" value="l138">Spain – Spanish</option>
+        <option id="ol139" value="l139">Sweden – Swedish</option>
     </select>                                                                                                                                                                                                                                                                                                                                           
 <br>
 <label id="losw" for="officesoftware">Office software</label> <br>
     <select name="officesoftware" id="officesoftware">
-        <option id="oosw140" value="140">FREE 30-Day testversion of Microsoft 365®</option>
-        <option id="oosw141" value="141">Microsoft® 365 Personal (12-Month-Abo - 78 €)</option>
-        <option id="oosw142" value="142">Microsoft® 365 Family (12-Month-Abo - 111 €)</option>
-        <option id="oosw143" value="143">Microsoft® Office Home & Student 2021 (170 €)</option>
-        <option id="oosw144" value="144">Microsoft® Office Home & Business 2021 (265 €)</option>
+        <option id="oosw140" value="osw140">FREE 30-Day testversion of Microsoft 365®</option>
+        <option id="oosw141" value="osw141">Microsoft® 365 Personal (12-Month-Abo - 78 €)</option>
+        <option id="oosw142" value="osw142">Microsoft® 365 Family (12-Month-Abo - 111 €)</option>
+        <option id="oosw143" value="osw143">Microsoft® Office Home & Student 2021 (170 €)</option>
+        <option id="oosw144" value="osw144">Microsoft® Office Home & Business 2021 (265 €)</option>
     </select>                                                                                                                                                                                                                                                                                                                                               
 <br>                                                                                                                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                                                                                                                                     
@@ -311,93 +311,83 @@
 <label id="lmonitor" for="monitor">Monitor</label> <br>
 <span class="custom-select-peripheral-bg server_select">
     <select name="monitor" id="monitor">
-        <option id="omon145" value="145">NONE</option>
-        <option id="omon146" value="146">AOC 23,8 Zoll 24B2XDAM – 1920 x 1080, 4 ms, D-Sub, DVI-D, HDMI (118 €)</option>
-        <option id="omon147" value="147">ASUS VA27EHF 27 Zoll - 1920 x 1080, IPS, 100Hz (119 €)</option>
-        <option id="omon148" value="148">AOC C24G2AE/BK 23,6 Zoll - 1920 x 1080, 165 Hz, 1 MS, HDMI, DP, VGA (199 €)</option>
+        <option id="omon145" value="mon145">NONE</option>
+        <option id="omon146" value="mon146">AOC 23,8 Zoll 24B2XDAM – 1920 x 1080, 4 ms, D-Sub, DVI-D, HDMI (118 €)</option>
+        <option id="omon147" value="mon147">ASUS VA27EHF 27 Zoll - 1920 x 1080, IPS, 100Hz (119 €)</option>
+        <option id="omon148" value="mon148">AOC C24G2AE/BK 23,6 Zoll - 1920 x 1080, 165 Hz, 1 MS, HDMI, DP, VGA (199 €)</option>
     </select>
 </span>
 <span class="custom-select-bg server-select-bg">
     <select name="quantity_monitor" id="quantity_monitor">
-        <option value="01">01</option>
-        <option value="02">02</option>
-        <option value="03">03</option>
-        <option value="04">04</option>
-        <option value="05">05</option>
-        <option value="06">06</option>
+        <option value="qm01">01</option>
+        <option value="qm02">02</option>
+        <option value="qm03">03</option>
+        <option value="qm04">04</option>
+        <option value="qm05">05</option>
+        <option value="qm06">06</option>
     </select>
 </span>                                                                                                                                                                                                                                                                                                                                   
 <br>                                                                                                                                                                                                                                                                                                                                             
 <label id="lmc" for="monitorcabel">Monitor cable</label> <br>
 <span class="custom-select-peripheral-bg">
     <select name="monitorcabel" id="monitorcabel">
-        <option id="omc150" value="150">NONE</option>
-        <option id="omc151" value="151">GILDED 1.8M V2.1 HDMI CABLE (9 €)</option>
-        <option id="omc152" value="152">2 m-DisplayPort adapter cable - mDP to HDMI (10 €)</option>
-        <option id="omc153" value="153">DisplayPort cabel, 2m – DP (m) to DP (m) (9 €)</option>
-        <option id="omc154" value="154">2 m-DisplayPort adapter cable - DP to DVI (10 €)</option>
-        <option id="omc155" value="155">2 m-DisplayPort adapter cable - DP to HDMI (10 €)</option>
-    </select>
-</span>
-<span class="custom-select-bg">
-    <select name="quantity_kabel" id="quantity_kabel">
-        <option value="01">01</option>
-        <option value="02">02</option>
-        <option value="03">03</option>
-        <option value="04">04</option>
-        <option value="05">05</option>
-        <option value="06">06</option>
+        <option id="omc150" value="mc150">NONE</option>
+        <option id="omc151" value="mc151">GILDED 1.8M V2.1 HDMI CABLE (9 €)</option>
+        <option id="omc152" value="mc152">2 m-DisplayPort adapter cable - mDP to HDMI (10 €)</option>
+        <option id="omc153" value="mc153">DisplayPort cabel, 2m – DP (m) to DP (m) (9 €)</option>
+        <option id="omc154" value="mc154">2 m-DisplayPort adapter cable - DP to DVI (10 €)</option>
+        <option id="omc155" value="mc155">2 m-DisplayPort adapter cable - DP to HDMI (10 €)</option>
     </select>
 </span>
 <br>                                                                                                                                                                                                                                                                                                                                                          
     <label id="lmb" for="monitorbracket">Monitor bracket  </label> <br>                                                                                                                                                                                                                                                                                                                                                                             
     <select name="monitorbracket" id="monitorbracket">
-        <option id="omb160" value="160">NONE</option>
-        <option id="omb161" value="161">PCS MULTI MONITOR 2 – 2 MONITORS (124 €)</option>
-        <option id="omb162" value="162">PCS MULTI MONITOR 3 – 3 MONITORS (209 €)</option>
+        <option id="omb160" value="mb160">NONE</option>
+        <option id="omb161" value="mb161">PCS MULTI MONITOR 2 – 2 MONITORS (124 €)</option>
+        <option id="omb162" value="mb162">PCS MULTI MONITOR 3 – 3 MONITORS (209 €)</option>
     </select>
 <br>  
     <label id="lmak" for="mouseandkeyboard">Mouse & Keyboard</label> <br>                                                                                                                                                                                                                                                                                                                                                                                        
-    <select name="mausundtastatur" id="mausundtastatur">
-        <option id="omak165" value="165">NONE</option>
-        <option id="omak166" value="166">Corsair K55 RGB PRO-Gaming-Keyboard (DE) (73 €)</option>
-        <option id="omak167" value="167">LOGITECH® MK540 KEYBOARD & MOUSE (DE) (58 €)</option>
+    <select name="mouseandkeyboard" id="mouseandkeyboard">
+        <option id="omak165" value="mak165">NONE</option>
+        <option id="omak166" value="mak166">Corsair K55 RGB PRO-Gaming-Keyboard (DE) (73 €)</option>
+        <option id="omak167" value="mak167">LOGITECH® MK540 KEYBOARD & MOUSE (DE) (58 €)</option>
     </select>                                                                                                                                                                                                                                                                                                                                                                                         
 <br>                                                                                                                                                                                                                                                                                                                                                                                     
     <label id="lcablem" for="cablemangagement">Cable mangagement</label> <br>                                                                                                              
     <select id="cablemangagement" name="cablemangagement">
-        <option id="ocablem170" value="170">NONE</option>
-        <option id="ocablem171" value="171">PCS 1,5 m Zip-cable routing  – Professional cable management (3 €)</option>
-        <option id="ocablem172" value="172">3 x PCS 1,5 m Zip-cable routing  – Professional cable management (6 €)</option>
-    </select>         
-    <!--continue translating here-->     
+        <option id="ocablem170" value="cablem170">NONE</option>
+        <option id="ocablem171" value="cablem171">PCS 1,5 m Zip-cable routing  – Professional cable management (3 €)</option>
+        <option id="ocablem172" value="cablem172">3 x PCS 1,5 m Zip-cable routing  – Professional cable management (6 €)</option>
+    </select>    
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-<div><h1 id="h1dands">Delivery & Services</h1>
-<br>                    
+<div><h1 id="h1dands">Delivery & Services</h1>                  
     <label id="lw" for="warranty">Warranty </label> <br>  
-    <select id="warranty " name="warranty">
-        <option id="ow175" value="175">3 Jahre Gold-Warranty (2 years pick-up and new delivery, 2 years parts, 3 years work)</option>
-        <option id="ow176" value="176">3 Jahre Platin-Warranty (3 years pick-up and new delivery, 3 years parts, 3 years work) (162 €)</option>
+    <select id="warranty" name="warranty">
+        <option id="ow175" value="w175">3 Jahre Gold-Warranty (2 years pick-up and new delivery, 2 years parts, 3 years work)</option>
+        <option id="ow176" value="w176">3 Jahre Platin-Warranty (3 years pick-up and new delivery, 3 years parts, 3 years work) (162 €)</option>
     </select>                        
 <br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     <label id="ld" for="delivery">Delivery </label> <br>
     <select id="delivery" name="delivery">
-        <option id="od180" value="180"selected>3 DAY DELIVERY TO GERMANY</option>
-        <option id="od181" value="181">NEXT DAY DELIVERY TO GERMANY</option>
-        <option id="od182" value="182">DELIVERY TO A CLOSE BY PACEL SHOP</option>
+        <option id="od180" value="d180"selected>3 DAY DELIVERY TO GERMANY</option>
+        <option id="od181" value="d181">NEXT DAY DELIVERY TO GERMANY</option>
+        <option id="od182" value="d182">DELIVERY TO A CLOSE BY PACEL SHOP</option>
     </select>                        
  <br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
     <label id="lc" for="configurationtime">Assembly time </label> <br>
     <select id="configurationtime" name="configurationtime">
-        <option id="oc185" value="185"selected>Standard Assembly – around 4 to 6 working days</option>
-        <option id="oc186" value="186">QUICK ASSEMBLY WITHIN 3 WORKING DAYS (83 €)</option>
-        <option id="oc187" value="187">FAST SHIPPING 1 BUSINESS DAY SHIPPING(119 €)</option>
+        <option id="oc185" value="c185"selected>Standard Assembly – around 4 to 6 working days</option>
+        <option id="oc186" value="c186">QUICK ASSEMBLY WITHIN 3 WORKING DAYS (83 €)</option>
+        <option id="oc187" value="c187">FAST SHIPPING 1 BUSINESS DAY SHIPPING(119 €)</option>
     </select>                        
 <br>                       
     <label id="la" for="amonunt"> Amount </label> <br>
-        <input type="text" name="quantity" value="1" maxlength="3" id="quantity" style="padding-left:13px;border:0 !important;" class="quantity quantity-view-select"> </div>
-       
-        <input type="submit" value="Abschicken" style="background-color:rgb(124, 124, 124)">
-    </form>
+        <input type="text" name="quantity" value="1" maxlength="3" id="quantity"> </div>      
+        <!--<input type="submit" value="Abschicken" style="background-color:rgb(124, 124, 124)">-->        
+    <div id="totalPrice">Gesamtpreis: 0 €</div>
+    <div id="selectedComponents">Ausgewählte Komponenten: </div>
+    <!--</form>-->
+    <script src="../private/calc.js"></script>
 </body>
 </html>
