@@ -111,11 +111,13 @@ document.addEventListener('DOMContentLoaded', function() {
             odvd102: 'odvd102',
         }
     };
+
     // Function to load the language file and update the content
     function loadLanguage(language) {
         fetch(`/lang/${language}.json`)
         .then(response => response.json())
-        .then(data => { updateContent(data);
+        .then(data => {
+            updateContent(data);
         })
         .catch(error => console.error('Error loading language file:', error));
     }
@@ -152,12 +154,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     }
-    // Load default language on first visit
-    const defaultLanguage = languageSelector.value;
-    loadLanguage(defaultLanguage);
+    // Load default or stored language on page load
+    const selectedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    languageSelector.value = selectedLanguage;
+    loadLanguage(selectedLanguage);
     // Event listener for language selection
     languageSelector.addEventListener('change', function() {
         const selectedLanguage = languageSelector.value;
+        localStorage.setItem('selectedLanguage', selectedLanguage);
         loadLanguage(selectedLanguage);
     });
 });
