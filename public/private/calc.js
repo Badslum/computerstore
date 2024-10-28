@@ -29,27 +29,10 @@ const componentPrices = {
     cpu: {
         ryzen3_4100: 100,
         ryzen3_4300g: 120,
-        ryzen5_4500: 150,
-        ryzen5_5500: 170,
-        ryzen5_4600g: 160,
-        ryzen5_5600gt: 180,
-        ryzen5_5600x: 200,
         ryzen7_5700: 250,
         ryzen7_5700x: 270,
         ryzen7_5700x3d: 300,
         ryzen7_5800x: 320,
-        i5_12400f: 200,
-        i5_12400: 210,
-        i5_14400f: 230,
-        i5_14400: 240,
-        i5_12500: 220,
-        i5_14500: 260,
-        i5_12600: 270,
-        i5_14600: 290,
-        i5_12600kf: 300,
-        i5_12600k: 310,
-        i5_14600kf: 320,
-        i5_14600k: 330,
         i7_12700f: 350,
         i7_12700: 360,
         i7_14700f: 400,
@@ -74,15 +57,9 @@ const componentPrices = {
         r18: 600
     },
     gpu_selection: {
-        g21: 40,
-        g22: 50,
-        g23: 55,
-        g24: 60,
         g25: 300,
         g26: 350,
         g27: 400,
-        g28: 500,
-        g29: 600,
         g30: 150,
         g31: 200,
         g20: 0
@@ -97,17 +74,9 @@ const componentPrices = {
         ssd41: 50, // 256 GB PCS PCIe SSD M.2
         ssd42: 80, // 512 GB PCS PCIe SSD M.2
         ssd43: 150, // 1 TB PCS PCIe SSD M.2
-        ssd44: 90, // 512 GB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD
-        ssd45: 160, // 1 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD
-        ssd46: 320, // 2 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD
         ssd47: 120, // 512 GB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD
         ssd48: 200, // 1 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD
         ssd49: 400, // 2 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD
-        ssd50: 180, // 1 TB CORSAIR FORCE MP600 NVMe PCIe M.2 SSD
-        ssd51: 350, // 2 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD
-        ssd52: 600, // 4 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD
-        ssd53: 750, // 4 TB CORSAIR MP600 PRO NVMe PCIe M.2 SSD
-        ssd54: 1300, // 8 TB CORSAIR MP600 PRO NH NVMe PCIe M.2 SSD
         ssd55: 220, // 1 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe
         ssd56: 400, // 2 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe
         ssd57: 750  // 4 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe
@@ -117,17 +86,9 @@ const componentPrices = {
         ssd61: 50, // 256 GB PCS PCIe SSD M.2
         ssd62: 80, // 512 GB PCS PCIe SSD M.2
         ssd63: 150, // 1 TB PCS PCIe SSD M.2
-        ssd64: 90, // 512 GB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD
-        ssd65: 160, // 1 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD
-        ssd66: 320, // 2 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD
         ssd67: 120, // 512 GB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD
         ssd68: 200, // 1 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD
         ssd69: 400, // 2 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD
-        ssd70: 180, // 1 TB CORSAIR FORCE MP600 NVMe PCIe M.2 SSD
-        ssd71: 350, // 2 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD
-        ssd72: 600, // 4 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD
-        ssd73: 750, // 4 TB CORSAIR MP600 PRO NVMe PCIe M.2 SSD
-        ssd74: 1300, // 8 TB CORSAIR MP600 PRO NH NVMe PCIe M.2 SSD
         ssd75: 220, // 1 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe
         ssd76: 400, // 2 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe
         ssd77: 750  // 4 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe

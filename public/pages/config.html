@@ -39,34 +39,13 @@
         <optgroup id="lamd_ryzen3" label="AMD RYZEN™ 3 PROCESSORS">
             <option id="oprocessor1" value="ryzen3_4100">AMD Ryzen 3 4100 4-Core-CPU (3,8GHz-4,0 GHz/6MB CACHE/AM4)</option>
             <option id="oprocessor2" value="ryzen3_4300g">AMD Ryzen 3 4300G 4-Core-CPU with Radeon™-graphics card (3,8 GHz-4,0 GHz/4 MB CACHE/AM4)</option>
-        </optgroup>       
-        <optgroup id="lamd_ryzen5" label="AMD RYZEN™ 5 PROCESSORS">
-            <option id="oprocessor3" value="ryzen5_4500">AMD Ryzen 5 4500 6-Core-CPU (3,6GHz-4,1 GHz/11MB CACHE/AM4)</option>
-            <option id="oprocessor4" value="ryzen5_5500">AMD Ryzen 5 5500 6-Core-CPU (3,6GHz-4,2 GHz/19MB CACHE/AM4)</option>
-            <option id="oprocessor5" value="ryzen5_4600g">AMD Ryzen 5 4600G 6-Core-CPU with Radeon™-graphics card (3,7 GHz-4,2 GHz/11 MB CACHE/AM4)</option>
-            <option id="oprocessor6" value="ryzen5_5600gt">AMD Ryzen 5 5600GT 6-Core-CPU with Radeon™-graphics card (3,6 GHz-4,6 GHz/19 MB CACHE/AM4)</option>
-            <option id="oprocessor7" value="ryzen5_5600x">AMD Ryzen 5 5600X 6-Core-CPU (3,7 GHz - 4,6 GHz/35 MB CACHE/AM4)</option>
-        </optgroup>      
+        </optgroup>             
         <optgroup id="lamd_ryzen7" label="AMD RYZEN™ 7 PROCESSORS">
             <option id="oprocessor8" value="ryzen7_5700">AMD Ryzen 7 5700 8-Core-CPU (3,7 GHz - 4,6 GHz/20 MB CACHE/AM4)</option>
             <option id="oprocessor9" value="ryzen7_5700x">AMD Ryzen 7 5700X 8-Core-CPU (3,4 GHz - 4,6 GHz/36 MB CACHE/AM4)</option>
             <option id="oprocessor10" value="ryzen7_5700x3d">AMD Ryzen 7 5700X3D 8-Core-CPU (3,0 GHz - 4,1 GHz/100 MB CACHE/AM4)</option>
             <option id="oprocessor11" value="ryzen7_5800x">AMD Ryzen 7 5800X 8-Core-CPU (3,8 GHz - 4,7 GHz/36 MB CACHE/AM4)</option>
         </optgroup>              
-        <optgroup id="lintelcore_i5" label="INTEL CORE™-i5-PROCESSORS">
-            <option id="oprocessor12" value="i5_12400f">Intel® Core™ i5 6-Core-Processor i5-12400F (bis 4,4 GHz), 18 MB Cache</option>
-            <option id="oprocessor13" value="i5_12400">Intel® Core™ i5 6-Core-Processor i5-12400 (bis 4,4 GHz), 18 MB Cache</option>
-            <option id="oprocessor14" value="i5_14400f">Intel® Core™ i5 10-Core-Processor i5-14400F (4,7 GHz), 20 MB Cache</option>
-            <option id="oprocessor15" value="i5_14400">Intel® Core™ i5 10-Core-Processor i5-14400 (bis 4,7 GHz), 20 MB Cache</option>
-            <option id="oprocessor16" value="i5_12500">Intel® Core™ i5 6-Core-Processor i5-12500 (bis 4,6 GHz), 18 MB Cache</option>
-            <option id="oprocessor17" value="i5_14500">Intel® Core™ i5 14-Core-Processor i5-14500 (bis 5,0 GHz), 24 MB Cache</option>
-            <option id="oprocessor18" value="i5_12600">Intel® Core™ i5 6-Core-Processor i5-12600 (bis 4,8 GHz), 18 MB Cache</option>
-            <option id="oprocessor19" value="i5_14600">Intel® Core™ i5 14-Core-Processor i5-14600 (bis 5,2 GHz), 24 MB Cache</option>
-            <option id="oprocessor20" value="i5_12600kf">Intel® Core™ i5 10-Core-Processor i5-12600KF (bis 4,9GHz) 20 MB Cache</option>
-            <option id="oprocessor21" value="i5_12600k">Intel® Core™ i5 10-Core-Processor i5-12600K (bis 4,9GHz) 20 MB Cache</option>
-            <option id="oprocessor22" value="i5_14600kf">Intel® Core™ i5 14-Core-Processor i5-14600KF (bis 5,3 GHz), 24 MB Cache</option>
-            <option id="oprocessor23" value="i5_14600k">Intel® Core™ i5 14-Core-Processor i5-14600K (bis 5,3 GHz), 24 MB Cache</option>
-        </optgroup>        
         <optgroup id="lintelcore_i7" label="INTEL CORE™-i7-PROCESSORS">
             <option id="oprocessor24" value="i7_12700f">Intel® Core™ i7 12-Core-Processor i7-12700F (bis 4,9GHz) 25 MB Cache</option>
             <option id="oprocessor25"value="i7_12700">Intel® Core™ i7 12-Core-Processor i7-12700 (bis 4,9GHz) 25 MB Cache</option>
@@ -98,22 +77,12 @@
         </select>        
  <br>
         <label id="lgpu" for="gpu">Graficscard</label> <br>
-        <select id="gpu_selection" name="gpu_selection">
-            <!-- Niedrigere NVIDIA-Grafikkarten -->
-            <option id="og21" value="g21" data-friendly-name="graficscard" selected>1 GB NVIDIA GEFORCE GT 710 – DVI, HDMI, VGA – 40 €</option>
-            <option id="og22" value="g22" data-friendly-name="graficscard">2 GB NVIDIA GEFORCE GT 730 – DVI, HDMI, VGA – 50 €</option>
-            <option id="og23" value="g23" data-friendly-name="graficscard">2 GB ASUS GEFORCE GT 730 – 4 ANZEIGE – 4 x HDMI – 55 €</option>
-            <option id="og24" value="g24" data-friendly-name="graficscard">2 GB NVIDIA GEFORCE GT 1030 – DVI, HDMI – 60 €</option>        
+        <select id="gpu_selection" name="gpu_selection">                
             <!-- NVIDIA RTX 30-Serie -->
             <optgroup label="NVIDIA® GEFORCE® RTX 30-SERIE (PALIT / ZOTAC)">
                 <option id="og25" value="g25" data-friendly-name="graficscard">6 GB NVIDIA GEFORCE RTX 3050 – HDMI, DP, LHR – 300 €</option>
                 <option id="og26" value="g26" data-friendly-name="graficscard">8 GB NVIDIA GEFORCE RTX 3050 – HDMI, DP, LHR – 350 €</option>
                 <option id="og27" value="g27" data-friendly-name="graficscard">12 GB NVIDIA GEFORCE RTX 3060 – HDMI, DP, LHR – 400 €</option>
-            </optgroup>
-            <!-- NVIDIA RTX 40-Serie -->
-            <optgroup label="NVIDIA® GEFORCE® RTX 40-SERIE (PALIT / ZOTAC)">
-                <option id="og28" value="g28" data-friendly-name="graficscard">8 GB NVIDIA GEFORCE RTX 4060 – HDMI, DP, LHR – 500 €</option>
-                <option id="og29" value="g29" data-friendly-name="graficscard">16 GB NVIDIA GEFORCE RTX 4060 Ti – HDMI, DP, LHR – 600 €</option>
             </optgroup>
             <!-- AMD Radeon-Grafikkarten -->
             <optgroup id="lAMD" label="AMD® RADEON-GRAFICCARDS">
@@ -140,24 +109,12 @@
              <option id="ossd41" value="ssd41">256 GB PCS PCIe SSD M.2 (up to 3200 MB/R, 2700MB/W)</option>
              <option id="ossd42" value="ssd42">512 GB PCS PCIe SSD M.2 (up to 2200 MB/R, 1500 MB/W)</option>
              <option id="ossd43" value="ssd43">1 TB PCS PCIe SSD M.2 (up to 3500 MB/R, 3200 MB/W)</option>
-         </optgroup>         
-         <optgroup label="-----------SOLIDIGM P41+ GEN 4 SERIE M.2 SSD-----------">
-             <option id="ossd44" value="ssd44">512 GB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 3500 MB/sR, 1625 MB/sW)</option>
-             <option id="ossd45" value="ssd45">1 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 4125 MB/sR, 2950 MB/sW)</option>
-             <option id="ossd46" value="ssd46">2 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 4125 MB/sR, 3325 MB/sW)</option>
-         </optgroup>        
+         </optgroup>               
          <optgroup label="-----------SOLIDIGM P44 PRO GEN 4 SERIES M.2 SSD-----------">
              <option id="ossd47" value="ssd47">512 GB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 4700 MB/sW)</option>
              <option id="ossd48" value="ssd48">1 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 6500 MB/sW)</option>
              <option id="ossd49" value="ssd49">2 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 6500 MB/sW)</option>
          </optgroup>         
-         <optgroup label="-----------CORSAIR NVMe PCIe M.2 SSD-----------">
-             <option id="ossd50" value="ssd50">1 TB CORSAIR FORCE MP600 NVMe PCIe M.2 SSD (up to 4950 MB/R, 4000 MB/W)</option>
-             <option id="ossd51" value="ssd51">2 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD (up to 5000 MB/R, 4400 MB/W)</option>
-             <option id="ossd52" value="ssd52">4 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD (up to 5000 MB/R, 4400 MB/W)</option>
-             <option id="ossd53" value="ssd53">4 TB CORSAIR MP600 PRO NVMe PCIe M.2 SSD (up to 7000 MB/R, 6850 MB/W)</option>
-             <option id="ossd54" value="ssd54">8 TB CORSAIR MP600 PRO NH NVMe PCIe M.2 SSD (up to 7000 MB/R, 6100 MB/W)</option>
-         </optgroup>
          <optgroup label="-----------SAMSUNG 990 PRO SERIE M.2 SSD-----------">
              <option id="ossd55" value="ssd55">1 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
              <option id="ossd56" value="ssd56">2 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
@@ -173,23 +130,11 @@
             <option id="ossd62" value="ssd62">512 GB PCS PCIe SSD M.2 (up to 2200 MB/R, 1500 MB/W)</option>
             <option id="ossd63" value="ssd63">1 TB PCS PCIe SSD M.2 (up to 3500 MB/R, 3200 MB/W)</option>
         </optgroup>        
-        <optgroup label="-----------SOLIDIGM P41+ GEN 4 SERIE M.2 SSD-----------">
-            <option id="ossd64" value="ssd64">512 GB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 3500 MB/sR, 1625 MB/sW)</option>
-            <option id="ossd65" value="ssd65">1 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 4125 MB/sR, 2950 MB/sW)</option>
-            <option id="ossd66" value="ssd66">2 TB SOLIDIGM P41+ GEN 4 M.2 NVMe PCIe SSD (up to 4125 MB/sR, 3325 MB/sW)</option>
-        </optgroup>       
         <optgroup label="-----------SOLIDIGM P44 PRO GEN 4 SERIES M.2 SSD-----------">
             <option id="ossd67" value="ssd67">512 GB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 4700 MB/sW)</option>
             <option id="ossd68" value="ssd68">1 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 6500 MB/sW)</option>
             <option id="ossd69" value="ssd69">2 TB SOLIDIGM P44 PRO GEN 4 M.2 NVMe PCIe SSD (up to 7000 MB/sR, 6500 MB/sW)</option>
         </optgroup>        
-        <optgroup label="-----------CORSAIR NVMe PCIe M.2 SSD-----------">
-            <option id="ossd70" value="ssd70">1 TB CORSAIR FORCE MP600 NVMe PCIe M.2 SSD (up to 4950 MB/R, 4000 MB/W)</option>
-            <option id="ossd71" value="ssd71">2 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD (up to 5000 MB/R, 4400 MB/W)</option>
-            <option id="ossd72" value="ssd72">4 TB CORSAIR CORE XT MP600 NVMe PCIe M.2 SSD (up to 5000 MB/R, 4400 MB/W)</option>
-            <option id="ossd73" value="ssd73">4 TB CORSAIR MP600 PRO NVMe PCIe M.2 SSD (up to 7000 MB/R, 6850 MB/W)</option>
-            <option id="ossd74" value="ssd74">8 TB CORSAIR MP600 PRO NH NVMe PCIe M.2 SSD (up to 7000 MB/R, 6100 MB/W)</option>
-        </optgroup>       
         <optgroup label="-----------SAMSUNG 990 PRO SERIE M.2 SSD-----------">
             <option id="ossd75" value="ssd75">1 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
             <option id="ossd76" value="ssd76">2 TB SAMSUNG 990 PRO M.2, PCIe 4.0 NVMe (up to 7450 MB/R, 6900 MB/W)</option>
