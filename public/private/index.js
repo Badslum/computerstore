@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
             loadPage(page);
         });
     });
+    // Event listener for language selection
+    languageSelector.addEventListener('change', function() {
+        const selectedLanguage = languageSelector.value;
+        localStorage.setItem('selectedLanguage', selectedLanguage);
+        loadLanguage(selectedLanguage);
+    });
     // Function to load different pages into the main content div
     function loadPage(page) {
         fetch(`/pages/${page}.html`)
