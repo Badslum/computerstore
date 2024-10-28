@@ -1,41 +1,23 @@
-/* Base styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #272222;
-    color: #fefefe;
-    margin: 0;
+    background-color: #f0f0f0;
+    margin: 0; padding: 0;
+} header {
+    background-color: #333; color: white;
+    padding: 1rem;
+} .navbar {
+    list-style: none;
     padding: 0;
-}
-
-/* Links */
-a {
-    color: #d31629;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    color: #e0e0e0;
-}
-
-/* Buttons */
-button {
-    background-color: #bb86fc;
-    border: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+} .navbar li {
+    display: inline;
+} .navbar li a {
     color: white;
-    padding: 10px 20px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #3700b3;
+    padding: 0.5rem 1rem;
+    display: block;
+} .navbar li a:hover {
+    background-color: #575757;
 }

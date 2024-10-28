@@ -1,22 +1,23 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-
-// Serve static files from the 'public' directory
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-
-// Route to serve the HTML file
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'pages', 'index.html'));
 });
-// Route to serve JavaScript files with the correct MIME type
-app.get('/public/*.js', (req, res) => {
-  res.set('Content-Type', 'application/javascript');
-  res.sendFile(req.path);
+app.get('/product', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'product.html'));
 });
-
-// Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.get('/config', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'config.html'));
+});
+app.get('/impressum', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'impressum.html'));
+});
+app.get('/login', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'login.html'));
+});
+app.listen(3000, () => { console.log('Server running at http://localhost:3000');
 });

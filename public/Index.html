@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="Utf-8">
-<link href="/custom/style.css" type="text/css" rel="stylesheet">
-<script src="/private/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Store</title>
+    <link rel="stylesheet" href="/custom/style.css">
+    <script src="/private/index.js" defer></script>
+    <script src="/private/language.js" defer></script>
 </head>
-<body>
-    <header id="navigation">
-        <button onclick="changeLanguage('en')">English</button>
-    <button onclick="changeLanguage('de')">Deutsch</button>
+<body> 
+    <header>
+        <!--Language Selection-->
+        <select id="language-selector">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+        </select>
+        <nav>
+            <!--site navigation-->
+            <ul class="navbar">
+                <li><a href="#"data-page="main">Home</a></li>
+                <li><a href="#"data-page="product">Products</a></li>
+                <li><a href="#"data-page="config">Configure</a></li>
+                <li><a href="#"data-page="impressum">Impressum</a></li>
+                <li><a href="#"data-page="login">Login</a></li>
+            </ul>
+        </nav>
     </header>
-<div id="page">
-    <script src="/public/private/main.js"></script>
-</div>
+    <main id="content">
+        <!-- Content will be loaded here -->
+    </main>
 </body>
 </html>
