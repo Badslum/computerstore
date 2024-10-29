@@ -40,15 +40,6 @@
     font-size: 14px;
 }
 
-.nav-list > .active > a:after {
-    /*border: none;*/
-}
-
-.nav-list > .active > a:after,
-.bs-docs-sidenav > li > a:hover:after {
-  /*  display: none;*/
-}
-
 .bs-docs-sidenav {
     margin-bottom: -2px;
 }

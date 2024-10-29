@@ -8,7 +8,7 @@ body{background-color:#000000;background-image:url(background1.jpg);background-p
 }
 body {
     background-color: #000000;
-    background-image: url("../custom/images/background1.jpg");
+    background-image: url("/images/background1.jpg");
     background-position: center 0;
     background-repeat: no-repeat;
     background-size: cover;

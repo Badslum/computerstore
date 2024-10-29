@@ -307,10 +307,6 @@ a.navbar-logout {
 
 /* success */
 
-.span-step-desc .btn {
-
-}
-
 .span-main-dialog {
     background-image: url("../img/separator.png");
     background-repeat: no-repeat;
@@ -738,7 +734,6 @@ x:-o-prefocus, .steps .icon-circle {
 .steps .step .step-label {
     color: #999999;
     display: inline-block;
-    float: left;
     font-size: 12px;
     line-height: 16px;
     margin-left: 7px;
@@ -835,7 +830,7 @@ x:-o-prefocus, .steps .icon-circle {
 }
 
 .bgc_reminder_switch:hover {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)"
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
     filter: alpha(opacity=75);
     -moz-opacity: 0.75;
     -khtml-opacity: 0.75;
@@ -936,7 +931,7 @@ x:-o-prefocus, .steps .icon-circle {
     opacity: 0.5;
 }
 .bs-docs-sidenav .active .icon-chevron-right, .bs-docs-sidenav .active a:hover .icon-chevron-right {
-    background-image: url("../img/glyphicons-halflings-white.png");
+    background-image: url("/img/glyphicons-halflings-white.png");
     opacity: 1;
 }
 .bs-docs-sidenav.affix {

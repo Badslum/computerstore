@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
   
-      // Simulate login logic (this is just an example, not secure)
+      // Simulate login logic
       if (username === 'admin' && password === 'password') {
         loginMessage.textContent = 'Login successful!';
         loginMessage.style.color = 'green';
-        // Redirect to home page or other actions on successful login
+        // Redirect to main page or other actions on successful login
         window.location.href = '../index.html';
       } else {
         loginMessage.textContent = 'Invalid username or password.';
