@@ -1,7 +1,20 @@
 {
     "main":{
         "greeting": "Welcome to our Website!",
-        "welcome": "We are happy you found your way to our Website. Here you find everything about PCs, home-entertainmentsystems and mobile devices."
+        "welcome": "We are happy you found your way to our Website. Here you find everything about PCs, home-entertainmentsystems and mobile devices.",
+        "who": "We are your experts for computers and computer equipement",
+        "why": "Why should you choose us?",
+        "quality": "High quality components: We only sell the bests products on the market",
+        "bob": "No need to pretend to be Bob the builder: Our technicans carefully assemble your new PC and test that everything is working before it is send out to you",
+        "reliability": "Reliability and Service: Your happiness is most important to us, which is why we offer you high quality product, an extended warranty and excellent service.",
+        "costs": "No hidden costs or fees: No bad surprises when you need to pay. You know exactly what you get for your money.",
+        "start": "Start your journey now...",
+        "case": "Choose your case: Looks and functionality in perfect harmony",
+        "configure": "Configure your maincomponents: CPU, mainboard, RAM and much more - preselected for you",
+        "addstuff": "Add equipment: Get the best out of your computer by choosing the right peripherals",
+        "philosophy": "Our philosophy",
+        "philotext": "We believe that there is the right computer for everyone, therefore we want to let you configure one that best fits your needs. Each computer we assemble is unique, like you are.",
+        "rules": "YOUR PC, YOUR RULES"
     },
     "products":{
 

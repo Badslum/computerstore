@@ -1,6 +1,19 @@
 {
     "main":{"greeting": "Willkommen auf unserer Website!",
-    "welcome": "Wir freuen uns, dass du den Weg auf unsere Website gefunden hast. Hier findest du alles rund um PCs, Home-Entertainment und mobile Geräte."
+    "welcome": "Wir freuen uns, dass du den Weg auf unsere Website gefunden hast. Hier findest du alles rund um PCs, Home-Entertainment und mobile Geräte.",
+    "who": "Wir sind deine Experten für Computer und Computer Equipment",
+    "why": "Warum solltest du uns auswählen?",
+    "quality": "Qualitativ hochwertige Komponenten: Wir verkaufen nur durch uns geprüfte und hochwertige am Markt vertretene Produkte",
+    "bob": "Keine Probleme mit Zusammenbau und Installation: Unsere Techniker bauen deinen Computer mit größter Sorgfalt zusammen und überprüfen ihn zusätzlich vor dem Verschicken auf seine Funktionalität",
+    "reliability": "Auf uns kannst du dich verlassen: Deine Zufriedenheit steht für uns im Vordergrund, weshalb wir nur qualitaiv hochwertige Produkte verkaufen, eine lange Garrantie vergeben und dir einen exellenten Service bieten",
+    "costs": "Keine bösen Überraschungen: Unsere Preise sind transparent und fair. Du weißt genau was du für dein Geld bekommst",
+    "start": "Starte deine Reise mit uns jetzt...",
+    "case": "Wähle dein Gehäuse: Optik und Funktionalität in perfekter Harmonie.",
+    "configure": "Hauptkomponenten konfigurieren: CPU, Mainboard, RAM und mehr - maßgeschneidert für dich.",
+    "addstuff": "Zubehör hinzufügen: Mache dein Setup komplett mit den richtigen Peripheriegeräten.",
+    "philosophy": "Unsere Philosophie",
+    "philotext": "Wir glauben, dass es den richtigen Computer für jeden gibt. Unsere Computer sind genauso wie du . einzigartig",
+    "rules": "DEIN COMPUTER DEINE REGELN"
     },
     "products":{
 
