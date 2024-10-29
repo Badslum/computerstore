@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="../custom/style.css">
 </head>
 <body>
-   <!--<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" target="_blank">--> 
+  
     <div><h1 id="case"> Select a computer case</h1>   
     <div id="cat18" name="cat18" class="case_selector">
         <div class="scrollbar-inner">
@@ -29,8 +29,6 @@
             </div>
         </div>
     </div>
-    <!--Die onclick-Attribute rufen zwei Funktionen auf: running_total() und update_pic(). Diese könnten für die Aktualisierung des Gesamtpreises und das Ändern des Bildes basierend auf der Auswahl verwendet werden.-->
-    <!--input-Elemente verwenden das Attribut name="18", was bedeutet, dass sie zu einer gemeinsamen Auswahlliste gehören. Dadurch kann immer nur eine Option gleichzeitig ausgewählt werden.-->
     </div>
 
    <div> <h1 id="h1maincomponents">Select your main components</h1>
@@ -183,7 +181,7 @@
     <select name="dvd" id="dvd">
         <option id="odvd100" value="dvd100">NONE NEEDED</option>
         <option id="odvd101" value="dvd101">24 x DUAL LAYER-DVD-BURNER ±R/±RW/RAM</option>
-        <option id="odvd102" value="dvd102">16 x BLU-RAY BURNER-DRIVE, 16 x DVD ±R/±RW &amp; SOFTWARE</option>
+        <option id="odvd102" value="dvd102">16 x BLU-RAY BURNER-DRIVE, 16 x DVD ±R/±RW & SOFTWARE</option>
     </select>
 <br>
 <label id="ledvd" for="externdvd">External DVD/BLU-RAY-Drive</label><br>
@@ -252,7 +250,7 @@
     </select>                                                                                                                                                                                                                                                                                                                                               
 <br>                                                                                                                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                                                                                                                                     
-<h1 id="h1peripherals">Peripheral devices &amp; appurtenances </h1>
+<h1 id="h1peripherals">Peripheral devices & appurtenances </h1>
 <label id="lmonitor" for="monitor">Monitor</label> <br>
 <span class="custom-select-peripheral-bg server_select">
     <select name="monitor" id="monitor">
@@ -329,10 +327,9 @@
 <br>                       
     <label id="la" for="amonunt"> Amount </label> <br>
         <input type="text" name="quantity" value="1" maxlength="3" id="quantity"> </div>      
-        <!--<input type="submit" value="Abschicken" style="background-color:rgb(124, 124, 124)">-->        
+        
     <div id="totalPrice">Total Price: 0 €</div>
     <div id="selectedComponents">Selected components: </div>
-    <!--</form>-->
     <script src="../private/calc.js"></script>
 </body>
 </html>
