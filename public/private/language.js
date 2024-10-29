@@ -6,7 +6,19 @@ document.addEventListener('DOMContentLoaded', function() {
             // elements for translations on mainpage:
             greeting: 'greeting',
             welcome:'welcome',
-            
+            who: 'who',
+            why: 'why',
+            quality: 'quality',
+            bob: 'bob',
+            reliability: 'reliability',
+            costs: 'costs',
+            start: 'start',
+            case1: 'case1',
+            configure: 'configure',
+            addstuff: 'addstuff',
+            philosophy: 'philosophy',
+            philotext: 'philotext',
+            rules: 'rules'
         },
         product: {
             // elements for translations on productspage:
