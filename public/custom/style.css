@@ -280,7 +280,10 @@ h1 {
     align-items: center;
     gap: 10px;
 }
-
+input[type="text"] { 
+    padding: 10px; 
+    
+     text-align: center; /* Text im Inputfeld zentrieren */ }
 input[type="radio"] {
     accent-color: #28a745;
 }
@@ -329,3 +332,12 @@ body, html {
     margin: 10px 0 0;
     font-size: 18px;
 }
+
+.containerm {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+

@@ -34,7 +34,7 @@
     </div>
         <div class="component-selection">
             <h1 id="h1maincomponents">Select Your Main Components</h1>
-            
+            <div class="containerm">
             <label for="cpu" id="lcpu">Processor (CPU)</label>
             <select id="cpu" name="cpu">
                 <optgroup id="lamd_ryzen3" label="AMD RYZEN™ 3 PROCESSORS">
@@ -98,8 +98,10 @@
                 <option id="ogp34" value="g34">PCS ARGB GRAPHIC BRACKET (14 €)</option>
             </select>
         </div>  
+    </div>
    
- <h1 id="h1drives">Hard drives, optical storage, & memory card readers</h1>                                                      
+ <h1 id="h1drives">Hard drives, optical storage, & memory card readers</h1> 
+ <div class="containerm">                                                     
  <label id="lssd_drive1" for="ssd_drive1">1. M.2 SSD drive</label><br>
      <select  name="ssd_drive1" id="ssd_drive1">
          <option id="ossd40" value="ssd40">NONE</option>        
@@ -197,10 +199,12 @@
     <option id="oed111" value="ed111">External hard drive 10 TB Seagate Expansion, USB 3.0, Black (240 €)</option>
     <option id="oed112" value="ed112">External hard drive 4 TB Seagate Expansion, USB 3.0, Black (118 €)</option>
     <option id="oed113" value="ed113">External hard drive 8 TB Seagate Expansion, USB 3.0, Black (178 €)</option>
-</select>                                                                                                                                                                                                                                                                                                                                                            
+</select>  
+</div>                                                                                                                                                                                                                                                                                                                                                          
          
     <!--continue here-->                                                                                                                                                                       
-<h1 id="h1pandc">Power and Cooling</h1>                                                                                                                                                                                                      
+<h1 id="h1pandc">Power and Cooling</h1>  
+<div class="containerm">                                                                                                                                                                                                    
  <label id="lpc" for="powercable">Power cable</label><br>
  <select name="powercable" id="powercable">
         <option id="opc115" value="pc115">1 x European power cable, 1,5 meter</option>
@@ -248,9 +252,11 @@
         <option id="oosw143" value="osw143">Microsoft® Office Home & Student 2021 (170 €)</option>
         <option id="oosw144" value="osw144">Microsoft® Office Home & Business 2021 (265 €)</option>
     </select>                                                                                                                                                                                                                                                                                                                                               
-<br>                                                                                                                                                                                                                                                                                                                                                 
+<br>     
+</div>                                                                                                                                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                                                                                                                     
 <h1 id="h1peripherals">Peripheral devices & appurtenances </h1>
+<div class="containerm">
 <label id="lmonitor" for="monitor">Monitor</label> <br>
 <span class="custom-select-peripheral-bg server_select">
     <select name="monitor" id="monitor">
@@ -302,9 +308,11 @@
         <option id="ocablem170" value="cablem170">NONE</option>
         <option id="ocablem171" value="cablem171">PCS 1,5 m Zip-cable routing  – Professional cable management (3 €)</option>
         <option id="ocablem172" value="cablem172">3 x PCS 1,5 m Zip-cable routing  – Professional cable management (6 €)</option>
-    </select>    
+    </select>  
+</div>  
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-<div><h1 id="h1dands">Delivery & Services</h1>                  
+<div><h1 id="h1dands">Delivery & Services</h1>    
+    <div class="containerm">              
     <label id="lw" for="warranty">Warranty </label> <br>  
     <select id="warranty" name="warranty">
         <option id="ow175" value="w175">3 Jahre Gold-Warranty (2 years pick-up and new delivery, 2 years parts, 3 years work)</option>
@@ -326,11 +334,12 @@
     </select>                        
 <br>                       
     <label id="la" for="amonunt"> Amount </label> <br>
-        <input type="text" name="quantity" value="1" maxlength="3" id="quantity"> </div>    <br>
+        <input type="text" name="quantity" value="1" maxlength="3" id="quantity" > </div>    <br>
+        </div>
       
-        
-    <div id="totalPrice">Total Price: 0 €</div>
+     <!--<div id="totalPrice">Total Price: 0 €</div>
     <div id="selectedComponents">Selected components: </div>
-   
+   -->   
+    
 </body>
 </html>
