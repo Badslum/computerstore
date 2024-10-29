@@ -1,1 +1,1 @@
-Folder for ONE css file. Images are to be put into the images folder.
+Folder for css file only. Images are to be put into the images folder.
