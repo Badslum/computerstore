@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Charset festlegen für die richtige Zeichencodierung -->
     <meta charset="UTF-8">
+
+    <!-- Viewport für responsive Gestaltung auf mobilen Geräten -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titel der Seite, der im Browser-Tab angezeigt wird -->
     <title>Products</title>
+
+    <!-- Verlinkung zur externen CSS-Datei für das Styling der Seite -->
     <link rel="stylesheet" href="../custom/style.css">
+
+    <!-- Verlinkung zu externen JavaScript-Dateien für die Sprach- und Warenkorb-Funktionen -->
     <script src="../private/language.js" defer></script>
     <script src="../private/cart.js" defer></script>
 </head>
 <body>
-    <div class="product-page">
-        <h1 id="product-title">Our Prefabs:</h1>
-        <div class="products">
-            <div class="product">
-                <img src="../custom/images/computer1.png" alt="Computer 1" class="product-image">
-                <h2>PC-Tower</h2>
-                <p class="description">Powerful PC-Tower with Intel i7 and 16GB RAM.</p>
-                <p class="price">999,99 €</p>
-                <button class="add-to-cart" data-name="PC-Tower" data-price="999.99">Add to cart</button>
-            </div>
-            <div class="product">
-                <img src="../custom/images/computer2.png" alt="Computer 2" class="product-image">
-                <h2>Laptop</h2>
-                <p class="description">Gaming-Laptop with AMD Ryzen 7 and 32GB RAM.</p>
-                <p class="price">1.499,99 €</p>
-                <button class="add-to-cart" data-name="Laptop" data-price="1499.99">Add to cart</button>
-            </div>
-            <div class="product">
-                <img src="../custom/images/computer3.png" alt="Computer 3" class="product-image">
-                <h2>All-in-One</h2>
-                <p class="description">Sleek All-in-One with Intel i5 and 8GB RAM.</p>
-                <p class="price">899,99 €</p>
-                <button class="add-to-cart" data-name="All-in-One" data-price="899.99">Add to cart</button>
-            </div>
+<!-- Hauptcontainer für die Produktseite -->
+<div class="product-page">
+    <!-- Überschrift der Produktseite -->
+    <h1 id="product-title">Our Prefabs:</h1>
+
+    <!-- Container für die einzelnen Produkte -->
+    <div class="products">
+        <!-- Produkt 1: PC-Tower -->
+        <div class="product">
+            <img src="../custom/images/computer1.png" alt="Computer 1" class="product-image">
+            <h2>PC-Tower</h2>
+            <p class="description">Powerful PC-Tower with Intel i7 and 16GB RAM.</p>
+            <p class="price">999,99 €</p>
+            <!-- Button zum Hinzufügen des Produkts zum Warenkorb -->
+            <button class="add-to-cart" data-name="PC-Tower" data-price="999.99">Add to cart</button>
+        </div>
+
+        <!-- Produkt 2: Laptop -->
+        <div class="product">
+            <img src="../custom/images/computer2.png" alt="Computer 2" class="product-image">
+            <h2>Laptop</h2>
+            <p class="description">Gaming-Laptop with AMD Ryzen 7 and 32GB RAM.</p>
+            <p class="price">1.499,99 €</p>
+            <!-- Button zum Hinzufügen des Produkts zum Warenkorb -->
+            <button class="add-to-cart" data-name="Laptop" data-price="1499.99">Add to cart</button>
+        </div>
+
+        <!-- Produkt 3: All-in-One -->
+        <div class="product">
+            <img src="../custom/images/computer3.png" alt="Computer 3" class="product-image">
+            <h2>All-in-One</h2>
+            <p class="description">Sleek All-in-One with Intel i5 and 8GB RAM.</p>
+            <p class="price">899,99 €</p>
+            <!-- Button zum Hinzufügen des Produkts zum Warenkorb -->
+            <button class="add-to-cart" data-name="All-in-One" data-price="899.99">Add to cart</button>
         </div>
     </div>
+</div>
 </body>
 </html>
