@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produktseite</title>
-    <script src="../private/language.js" defer></script>
+    <title>Products</title>
     <link rel="stylesheet" href="../custom/style.css">
+    <script src="../private/language.js" defer></script>
+    <script src="../private/cart.js" defer></script>
 </head>
 <body>
-<div class="product-page">
-    <h1>Wähle dein Computer</h1>
-    <div class="products">
-        <!-- Erster Computer Artikel -->
-        <div class="product">
-            <img src="../custom/images/computer1.png" alt="Computer 1" class="product-image">
-            <h2>Computer 1</h2>
-            <p class="description">Leistungsstarker Desktop-PC mit Intel i7 und 16GB RAM.</p>
-            <p class="price">999,99 €</p>
-            <button class="add-to-cart">Zum Warenkorb hinzufügen</button>
-        </div>
-
-        <!-- Zweiter Computer Artikel -->
-        <div class="product">
-            <img src="../custom/images/computer2.png" alt="Computer 2" class="product-image">
-            <h2>Computer 2</h2>
-            <p class="description">Gaming-Laptop mit AMD Ryzen 7 und 32GB RAM.</p>
-            <p class="price">1.499,99 €</p>
-            <button class="add-to-cart">Zum Warenkorb hinzufügen</button>
+    <div class="product-page">
+        <h1 id="product-title">Our Prefabs:</h1>
+        <div class="products">
+            <div class="product">
+                <img src="../custom/images/computer1.png" alt="Computer 1" class="product-image">
+                <h2>PC-Tower</h2>
+                <p class="description">Powerful PC-Tower with Intel i7 and 16GB RAM.</p>
+                <p class="price">999,99 €</p>
+                <button class="add-to-cart" data-name="PC-Tower" data-price="999.99">Add to cart</button>
+            </div>
+            <div class="product">
+                <img src="../custom/images/computer2.png" alt="Computer 2" class="product-image">
+                <h2>Laptop</h2>
+                <p class="description">Gaming-Laptop with AMD Ryzen 7 and 32GB RAM.</p>
+                <p class="price">1.499,99 €</p>
+                <button class="add-to-cart" data-name="Laptop" data-price="1499.99">Add to cart</button>
+            </div>
+            <div class="product">
+                <img src="../custom/images/computer3.png" alt="Computer 3" class="product-image">
+                <h2>All-in-One</h2>
+                <p class="description">Sleek All-in-One with Intel i5 and 8GB RAM.</p>
+                <p class="price">899,99 €</p>
+                <button class="add-to-cart" data-name="All-in-One" data-price="899.99">Add to cart</button>
+            </div>
         </div>
     </div>
-</div>
 </body>
 </html>
