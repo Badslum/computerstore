@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loginMessage.textContent = 'Login successful!';
         loginMessage.style.color = 'green';
         // Redirect to main page or other actions on successful login
-        window.location.href = '../index.html';
+        window.location.href = '../pages/main.html';
       } else {
         loginMessage.textContent = 'Invalid username or password.';
         loginMessage.style.color = 'red';

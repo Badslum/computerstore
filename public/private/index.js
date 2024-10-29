@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load the default page (main) on page load
     loadPage('main');
   });
-  
       
 document.addEventListener('DOMContentLoaded', function() {
     const themeToggleButton = document.getElementById('theme-toggle');
@@ -51,3 +50,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  function goToMainPage() { window.location.href = '../index.html';
+    }

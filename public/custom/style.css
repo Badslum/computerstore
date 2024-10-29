@@ -193,6 +193,15 @@ header {
     cursor: pointer;
 }
 
+.back-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 .add-to-cart:hover {
     background-color: #218838;
 }
@@ -208,7 +217,6 @@ header {
 }
 
 .login-form {
-    background-color: #1e1e1e;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -225,17 +233,16 @@ label {
 
 input[type="text"],
 input[type="password"] {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     border: 1px solid #333;
     border-radius: 4px;
-    background-color: #2c2c2c;
     color: #e0e0e0;
 }
 
 .login-button {
     background-color: #28a745;
-    color: white;
+    color: white; 
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -258,7 +265,6 @@ h1 {
 .case_selector {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #1e1e1e;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -337,7 +343,27 @@ body, html {
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
+.config_select {
+    max-width: 500px;
+    border: 1px solid #666;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
 
+.la {
+    color: black;
+    background-color: white;
+}
+
+.text_plain{
+    margin-left: 1%;
+    max-width: 98%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}

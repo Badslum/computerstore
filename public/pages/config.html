@@ -36,7 +36,7 @@
             <h1 id="h1maincomponents">Select Your Main Components</h1>
             <div class="containerm">
             <label for="cpu" id="lcpu">Processor (CPU)</label>
-            <select id="cpu" name="cpu">
+            <select class="config_select" id="cpu" name="cpu">
                 <optgroup id="lamd_ryzen3" label="AMD RYZEN™ 3 PROCESSORS">
                     <option id="oprocessor1" value="ryzen3_4100">AMD Ryzen 3 4100 4-Core-CPU (3.8 GHz - 4.0 GHz / 6 MB CACHE / AM4)</option>
                     <option id="oprocessor2" value="ryzen3_4300g">AMD Ryzen 3 4300G 4-Core-CPU with Radeon™ Graphics (3.8 GHz - 4.0 GHz / 4 MB CACHE / AM4)</option>
@@ -56,7 +56,7 @@
             </select>
     
             <label id="lmainboard" for="mainboard">Mainboard</label>
-            <select id="mainboard" name="mainboard">
+            <select class="config_select" id="mainboard" name="mainboard">
                 <option id="om1" value="m1">GIGABYTE A520M K V2 (mATX, AM4, DDR4, PCIe 3.0)</option>
                 <option id="om2" value="m2">GIGABYTE B550M DS3H (mATX, DDR4, AM4, PCIe 4.0)</option>
                 <option id="om3" value="m3">GIGABYTE B550 GAMING X V2 (AM4, DDR4, PCIe 4.0)</option>
@@ -66,7 +66,7 @@
             </select>
     
             <label id="lram" for="ram">Random-access memory (RAM)</label>
-            <select id="ram" name="ram">
+            <select class="config_select" id="ram" name="ram">
                 <option id="or11" value="r11">8 GB PCS PRO DDR4 3200 MHz (1 x 8 GB)</option>
                 <option id="or12" value="r12">16 GB PCS PRO DDR4 3200 MHz (1 x 16 GB)</option>
                 <option id="or13" value="r13">16 GB PCS PRO DDR4 3200 MHz (2 x 8 GB)</option>
@@ -78,7 +78,7 @@
             </select>
     
             <label id="lgpu" for="gpu_selection">Graphics Card</label>
-            <select id="gpu_selection" name="gpu_selection">
+            <select class="config_select" id="gpu_selection" name="gpu_selection">
                 <optgroup label="NVIDIA® GEFORCE® RTX 30 SERIES (PALIT / ZOTAC)">
                     <option id="og25" value="g25" data-friendly-name="graphicscard">6 GB NVIDIA GEFORCE RTX 3050 – HDMI, DP, LHR – 300 €</option>
                     <option id="og26" value="g26" data-friendly-name="graphicscard">8 GB NVIDIA GEFORCE RTX 3050 – HDMI, DP, LHR – 350 €</option>
@@ -92,7 +92,7 @@
             </select>
     
             <label id="gpu_bracket" for="gpu_bracket">GPU Bracket</label>
-            <select id="gpu_bracket" name="gpu_bracket">
+            <select class="config_select" id="gpu_bracket" name="gpu_bracket">
                 <option id="ogp32" value="g32">NONE (INCLUDED FOR 4070 Ti / RX 7700 XT AND HIGHER)</option>
                 <option id="ogp33" value="g33">PCS GRAPHIC BRACKET (9 €)</option>
                 <option id="ogp34" value="g34">PCS ARGB GRAPHIC BRACKET (14 €)</option>
@@ -103,7 +103,7 @@
  <h1 id="h1drives">Hard drives, optical storage, & memory card readers</h1> 
  <div class="containerm">                                                     
  <label id="lssd_drive1" for="ssd_drive1">1. M.2 SSD drive</label><br>
-     <select  name="ssd_drive1" id="ssd_drive1">
+     <select class="config_select"  name="ssd_drive1" id="ssd_drive1">
          <option id="ossd40" value="ssd40">NONE</option>        
          <optgroup label="-----------PCIe M.2 SSD-----------">
              <option id="ossd41" value="ssd41">256 GB PCS PCIe SSD M.2 (up to 3200 MB/R, 2700MB/W)</option>
@@ -123,7 +123,7 @@
      </select>
 <br>
  <label id="lssd_drive2" for="ssd_drive2">2. M.2 SSD drive</label><br>
-    <select name="ssd_drive2" id="ssd_drive2">
+    <select class="config_select" name="ssd_drive2" id="ssd_drive2">
         <option id="ossd60" value="ssd60">NONE</option>        
         <optgroup label="-----------PCIe M.2 SSD-----------">
             <option id="ossd61" value="ssd61">256 GB PCS PCIe SSD M.2 (up to 3200 MB/R, 2700MB/W)</option>
@@ -144,7 +144,7 @@
 </span>
 <br>   
 <label id="lsd1" for="storage_drive1">1. Storage drive</label><br>
-    <select name="storage_drive1" id="storage_drive1">
+    <select class="config_select" name="storage_drive1" id="storage_drive1">
         <option id="osd80" value="sd80">NONE</option>
         <optgroup label="STANDARD 2,5">
             <option id="osd81" value="sd81">256 GB PCS 2,5 SSD, SATA 6 Gb (up to 500 MB/R, 400 MB/W)</option>
@@ -162,7 +162,7 @@
     </select>
 <br>      
     <label id="lsd2" for="storage_drive2">2. Storage drive</label><br>
-    <select name="storage_drive2" id="storage_drive2">
+    <select class="config_select" name="storage_drive2" id="storage_drive2">
         <option id="osd90" value="sd90">NONE</option>
         <optgroup label="STANDARD 2,5">
             <option id="osd91" value="sd91">256 GB PCS 2,5 SSD, SATA 6 Gb (up to 500 MB/R, 400 MB/W)</option>
@@ -180,21 +180,21 @@
     </select>
 <br>
 <label id="ldvd" for="dvd">DVD/BLU-RAY-Drive</label><br>
-    <select name="dvd" id="dvd">
+    <select class="config_select" name="dvd" id="dvd">
         <option id="odvd100" value="dvd100">NONE NEEDED</option>
         <option id="odvd101" value="dvd101">24 x DUAL LAYER-DVD-BURNER ±R/±RW/RAM</option>
         <option id="odvd102" value="dvd102">16 x BLU-RAY BURNER-DRIVE, 16 x DVD ±R/±RW & SOFTWARE</option>
     </select>
 <br>
 <label id="ledvd" for="externdvd">External DVD/BLU-RAY-Drive</label><br>
-<select  name="externdvd"  id="externdvd">
+<select class="config_select" name="externdvd"  id="externdvd">
     <option id="odvd105" value="edvd105">NONE</option>
     <option id="odvd106" value="edvd106">External DVD-RW Slim USB 2.0 (26 €)</option>
     <option id="odvd107" value="edvd107">6 x External Slim USB 2.0-Blu-Ray-Burner (118 €)</option>
 </select>                                                                                                                                    
 <br>
 <label id="lexdrive" for="externaldrive">External hard drive</label><br>
-<select name="externaldrive"  id="externaldrive">
+<select class="config_select" name="externaldrive"  id="externaldrive">
     <option id="oed110" value="ed110">NONE</option>
     <option id="oed111" value="ed111">External hard drive 10 TB Seagate Expansion, USB 3.0, Black (240 €)</option>
     <option id="oed112" value="ed112">External hard drive 4 TB Seagate Expansion, USB 3.0, Black (118 €)</option>
@@ -206,7 +206,7 @@
 <h1 id="h1pandc">Power and Cooling</h1>  
 <div class="containerm">                                                                                                                                                                                                    
  <label id="lpc" for="powercable">Power cable</label><br>
- <select name="powercable" id="powercable">
+ <select class="config_select" name="powercable" id="powercable">
         <option id="opc115" value="pc115">1 x European power cable, 1,5 meter</option>
         <option id="opc116" value="pc116">1 x Swiss power cable, 1,5 meter</option>
         <option id="opc117" value="pc117">1 x British power cable, 1,5 meter</option> 
@@ -214,14 +214,14 @@
 </select>
 <br>                                                                                                                                                                                                             
 <label id="cpuc" for="cpucoolers">CPU coolers</label><br>
-    <select name="cpucoolers" id="cpucoolers">
+    <select class="config_select" name="cpucoolers" id="cpucoolers">
         <option id="ocpuc120" value="cpuc120">STANDARD-CPU coolers LGA1700 (95W TDP) (6 €)</option>
         <option id="ocpuc121" value="cpuc121">HIGH-PERFORMANCE-CPU coolers  FrostFlow 100 V3-Serie (120W TDP) (23 €)</option>
         <option id="ocpuc122" value="cpuc122">HIGH-PERFORMANCE-CPU coolers  FrostFlow 200-Serie (250W TDP) (54 €)</option>
     </select>
 <br>                                                                                                                                                           
 <label id="lhcp" for="heatconductingpaste">Heat conducting paste</label><br>
-    <select name="heatconductingpaste" id="heatconductingpaste">
+    <select class="config_select" name="heatconductingpaste" id="heatconductingpaste">
         <option id="ohcp125" value="hcp125">THERMAL STANDARD HEAT-CONDUNCTING PASTE</option>
         <option id="ohcp126" value="hcp126">ARKTIC MX-4 EXTREM HEAT-CONDUNCTING PASTE (11 €)</option>
     </select>
@@ -229,14 +229,14 @@
                                                                                                                                                                                                                                                                                                                                                                                     
 <h1 id="h1os">Select your operating system & your software</h1>
 <label id="los" for="os">Operating system</label> <br>
-    <select name="os" id="os">
+    <select class="config_select" name="os" id="os">
         <option id="oos130" value="os130">Windows 11 Home 64 Bit – incl. single license</option>
         <option id="oos131" value="os131">Windows 11 Professional 64 Bit – incl. single license</option>
         <option id="oos132" value="os132">NO OPERATING SYSTEM NEEDED</option>
     </select>
 <br>
 <label id="llanguage" for="language">Language</label> <br>
-    <select name="language" id="language">
+    <select class="config_select" name="language" id="language">
         <option id="ol135" value="l135">United Kingdom – English</option>
         <option id="ol136" value="l136" selected>Germany – German</option>
         <option id="ol137" value="l137">Italy – Italian</option>
@@ -245,7 +245,7 @@
     </select>                                                                                                                                                                                                                                                                                                                                           
 <br>
 <label id="losw" for="officesoftware">Office software</label> <br>
-    <select name="officesoftware" id="officesoftware">
+    <select class="config_select" name="officesoftware" id="officesoftware">
         <option id="oosw140" value="osw140">FREE 30-Day testversion of Microsoft 365®</option>
         <option id="oosw141" value="osw141">Microsoft® 365 Personal (12-Month-Abo - 78 €)</option>
         <option id="oosw142" value="osw142">Microsoft® 365 Family (12-Month-Abo - 111 €)</option>
@@ -259,7 +259,7 @@
 <div class="containerm">
 <label id="lmonitor" for="monitor">Monitor</label> <br>
 <span class="custom-select-peripheral-bg server_select">
-    <select name="monitor" id="monitor">
+    <select class="config_select" name="monitor" id="monitor">
         <option id="omon145" value="mon145">NONE</option>
         <option id="omon146" value="mon146">AOC 23,8 Zoll 24B2XDAM – 1920 x 1080, 4 ms, D-Sub, DVI-D, HDMI (118 €)</option>
         <option id="omon147" value="mon147">ASUS VA27EHF 27 Zoll - 1920 x 1080, IPS, 100Hz (119 €)</option>
@@ -267,7 +267,7 @@
     </select>
 </span>
 <span class="custom-select-bg server-select-bg">
-    <select name="quantity_monitor" id="quantity_monitor">
+    <select class="config_select" name="quantity_monitor" id="quantity_monitor">
         <option value="qm01">01</option>
         <option value="qm02">02</option>
         <option value="qm03">03</option>
@@ -279,7 +279,7 @@
 <br>                                                                                                                                                                                                                                                                                                                                             
 <label id="lmc" for="monitorcabel">Monitor cable</label> <br>
 <span class="custom-select-peripheral-bg">
-    <select name="monitorcabel" id="monitorcabel">
+    <select class="config_select" name="monitorcabel" id="monitorcabel">
         <option id="omc150" value="mc150">NONE</option>
         <option id="omc151" value="mc151">GILDED 1.8M V2.1 HDMI CABLE (9 €)</option>
         <option id="omc152" value="mc152">2 m-DisplayPort adapter cable - mDP to HDMI (10 €)</option>
@@ -290,21 +290,21 @@
 </span>
 <br>                                                                                                                                                                                                                                                                                                                                                          
     <label id="lmb" for="monitorbracket">Monitor bracket  </label> <br>                                                                                                                                                                                                                                                                                                                                                                             
-    <select name="monitorbracket" id="monitorbracket">
+    <select class="config_select" name="monitorbracket" id="monitorbracket">
         <option id="omb160" value="mb160">NONE</option>
         <option id="omb161" value="mb161">PCS MULTI MONITOR 2 – 2 MONITORS (124 €)</option>
         <option id="omb162" value="mb162">PCS MULTI MONITOR 3 – 3 MONITORS (209 €)</option>
     </select>
 <br>  
     <label id="lmak" for="mouseandkeyboard">Mouse & Keyboard</label> <br>                                                                                                                                                                                                                                                                                                                                                                                        
-    <select name="mouseandkeyboard" id="mouseandkeyboard">
+    <select class="config_select" name="mouseandkeyboard" id="mouseandkeyboard">
         <option id="omak165" value="mak165">NONE</option>
         <option id="omak166" value="mak166">Corsair K55 RGB PRO-Gaming-Keyboard (DE) (73 €)</option>
         <option id="omak167" value="mak167">LOGITECH® MK540 KEYBOARD & MOUSE (DE) (58 €)</option>
     </select>                                                                                                                                                                                                                                                                                                                                                                                         
 <br>                                                                                                                                                                                                                                                                                                                                                                                     
     <label id="lcablem" for="cablemangagement">Cable mangagement</label> <br>                                                                                                              
-    <select id="cablemangagement" name="cablemangagement">
+    <select class="config_select" id="cablemangagement" name="cablemangagement">
         <option id="ocablem170" value="cablem170">NONE</option>
         <option id="ocablem171" value="cablem171">PCS 1,5 m Zip-cable routing  – Professional cable management (3 €)</option>
         <option id="ocablem172" value="cablem172">3 x PCS 1,5 m Zip-cable routing  – Professional cable management (6 €)</option>
@@ -314,20 +314,20 @@
 <div><h1 id="h1dands">Delivery & Services</h1>    
     <div class="containerm">              
     <label id="lw" for="warranty">Warranty </label> <br>  
-    <select id="warranty" name="warranty">
+    <select class="config_select" id="warranty" name="warranty">
         <option id="ow175" value="w175">3 Jahre Gold-Warranty (2 years pick-up and new delivery, 2 years parts, 3 years work)</option>
         <option id="ow176" value="w176">3 Jahre Platin-Warranty (3 years pick-up and new delivery, 3 years parts, 3 years work) (162 €)</option>
     </select>                        
 <br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     <label id="ld" for="delivery">Delivery </label> <br>
-    <select id="delivery" name="delivery">
+    <select class="config_select" id="delivery" name="delivery">
         <option id="od180" value="d180"selected>3 DAY DELIVERY TO GERMANY</option>
         <option id="od181" value="d181">NEXT DAY DELIVERY TO GERMANY</option>
         <option id="od182" value="d182">DELIVERY TO A CLOSE BY PACEL SHOP</option>
     </select>                        
  <br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
     <label id="lc" for="configurationtime">Assembly time </label> <br>
-    <select id="configurationtime" name="configurationtime">
+    <select class="config_select" id="configurationtime" name="configurationtime">
         <option id="oc185" value="c185"selected>Standard Assembly – around 4 to 6 working days</option>
         <option id="oc186" value="c186">QUICK ASSEMBLY WITHIN 3 WORKING DAYS (83 €)</option>
         <option id="oc187" value="c187">FAST SHIPPING 1 BUSINESS DAY SHIPPING(119 €)</option>
