@@ -1,41 +1,53 @@
 document.addEventListener('DOMContentLoaded', function() {
     const languageSelector = document.getElementById('language-selector');
     const contentDiv = document.getElementById('content');
-    // Load the selected language from localStorage
-    const selectedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-    languageSelector.value = selectedLanguage;
-    // Function to load the language file and update the content
-    function loadLanguage(language) {
-        fetch(`/lang/${language}.json`)
-        .then(response => response.json())
-        .then(data => { updateContent(data);
-        })
-        .catch(error => console.error('Error loading language file:', error));
-    }
-
-    // Event listeners for navigation
-    document.querySelectorAll('.navbar a').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const page = link.getAttribute('data-page');
-            loadPage(page);
-        });
+    const cartButton = document.getElementById('cart-button');
+  
+    // Event listener for cart button
+    cartButton.addEventListener('click', function() {
+      window.location.href = '/pages/cart.html';
     });
-    // Event listener for language selection
-    languageSelector.addEventListener('change', function() {
-        const selectedLanguage = languageSelector.value;
-        localStorage.setItem('selectedLanguage', selectedLanguage);
-        loadLanguage(selectedLanguage);
-    });
+  
     // Function to load different pages into the main content div
     function loadPage(page) {
-        fetch(`/pages/${page}.html`)
+      fetch(`/pages/${page}.html`)
         .then(response => response.text())
         .then(html => {
-            contentDiv.innerHTML = html;
+          contentDiv.innerHTML = html;
+          // Re-apply language settings after loading new content
+          loadLanguage(languageSelector.value);
         })
         .catch(error => console.error('Error loading page:', error));
     }
-    // Load the default page (main) on first visit:
+  
+    // Event listeners for navigation
+    document.querySelectorAll('.navbar a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const page = link.getAttribute('data-page');
+        loadPage(page);
+      });
+    });
+  
+    // Load the default page (main) on page load
     loadPage('main');
-});
+  });
+  
+      
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggleButton = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    
+    if (currentTheme === 'light') {
+      document.body.classList.remove('dark-mode');
+    } else {
+      document.body.classList.add('dark-mode');
+    }
+    
+    themeToggleButton.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+    });
+  });
+  

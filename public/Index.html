@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Store</title>
     <script src="/private/index.js" defer></script>
+    <script src="/private/cart.js" defer></script>
     <script src="/private/language.js" defer></script>
     <link rel="stylesheet" href="/custom/style.css">
 </head>
 <body> 
     <header>
-        <!--Language Selection-->
-        <select id="language-selector">
-            <option value="en">English</option>
-            <option value="de">Deutsch</option>
-        </select>
+        <div class="top-bar">
+            <div class="right-buttons">
+                <!--Darkmode-->
+                <button id="theme-toggle" class="theme-toggle">Toggle Dark Mode</button>
+                <!--Language Selection-->
+                <select id="language-selector">
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                </select>
+                <button id="cart-button" class="cart-button">Cart</button>
+            </div>
+    </div>
         <nav>
             <!--site navigation-->
             <ul class="navbar">

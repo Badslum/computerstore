@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../custom/style.css">
+    <script src="../private/cart.js" defer></script>
+    <script src="../private/index.js" defer></script>
+</head>
+<body>
+    <div class="cart-page">
+        <h1>Your Shopping Cart</h1>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <p>Total: <span id="cart-total">0.00</span> €</p>
+            <button class="checkout-button">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>

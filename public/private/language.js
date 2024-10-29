@@ -212,6 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
             updateElements(data.config, pageElements.config)
         }
     }
+  
     // Function to update elements on a page
     function updateElements(data, elements) {
         for (const key in elements) {
