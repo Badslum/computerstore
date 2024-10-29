@@ -435,3 +435,13 @@ document.querySelectorAll('input[name="case"], #cpu, #mainboard, #ram, #gpu_sele
 
 // Initiale Berechnung beim Laden
 window.onload = calculateTotal;
+
+function loadPage(page) { 
+    fetch(`/pages/${page}.html`) 
+    .then(response => response.text()) 
+    .then(html => { contentDiv.innerHTML = html; 
+    // Re-apply language settings after loading new content 
+    loadLanguage(languageSelector.value); // Set total price and selected components 
+    document.getElementById('totalPrice').textContent = `Total price: ${total} €`; 
+    document.getElementById('selectedComponents').innerHTML = selectedComponents.join('<br>'); }) 
+    .catch(error => console.error('Error loading page:', error)); }

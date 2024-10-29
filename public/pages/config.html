@@ -3,6 +3,7 @@
 <head>
 <meta charset="Utf-8">
 <script src="../private/language.js" defer></script>
+<script src="../private/calc.js"></script>
 <link rel="stylesheet" href="../custom/style.css">
 </head>
 <body>
@@ -34,17 +35,17 @@
    <div> <h1 id="h1maincomponents">Select your main components</h1>
     <label for="cpu" id="lcpu">Processor (CPU)</label> <br>
     <select id="cpu" name="cpu">
-        <optgroup id="lamd_ryzen3" label="AMD RYZEN™ 3 PROCESSORS">
+        <optgroup label="AMD RYZEN™ 3">
             <option id="oprocessor1" value="ryzen3_4100">AMD Ryzen 3 4100 4-Core-CPU (3,8GHz-4,0 GHz/6MB CACHE/AM4)</option>
             <option id="oprocessor2" value="ryzen3_4300g">AMD Ryzen 3 4300G 4-Core-CPU with Radeon™-graphics card (3,8 GHz-4,0 GHz/4 MB CACHE/AM4)</option>
         </optgroup>             
-        <optgroup id="lamd_ryzen7" label="AMD RYZEN™ 7 PROCESSORS">
+        <optgroup label="AMD RYZEN™ 7">
             <option id="oprocessor8" value="ryzen7_5700">AMD Ryzen 7 5700 8-Core-CPU (3,7 GHz - 4,6 GHz/20 MB CACHE/AM4)</option>
             <option id="oprocessor9" value="ryzen7_5700x">AMD Ryzen 7 5700X 8-Core-CPU (3,4 GHz - 4,6 GHz/36 MB CACHE/AM4)</option>
             <option id="oprocessor10" value="ryzen7_5700x3d">AMD Ryzen 7 5700X3D 8-Core-CPU (3,0 GHz - 4,1 GHz/100 MB CACHE/AM4)</option>
             <option id="oprocessor11" value="ryzen7_5800x">AMD Ryzen 7 5800X 8-Core-CPU (3,8 GHz - 4,7 GHz/36 MB CACHE/AM4)</option>
         </optgroup>              
-        <optgroup id="lintelcore_i7" label="INTEL CORE™-i7-PROCESSORS">
+        <optgroup  label="INTEL CORE™-i7">
             <option id="oprocessor24" value="i7_12700f">Intel® Core™ i7 12-Core-Processor i7-12700F (bis 4,9GHz) 25 MB Cache</option>
             <option id="oprocessor25"value="i7_12700">Intel® Core™ i7 12-Core-Processor i7-12700 (bis 4,9GHz) 25 MB Cache</option>
             <option id="oprocessor26" value="i7_14700f">Intel® Core™ i7 20-Core-Processor i7-14700F (bis 5,4GHz) 33 MB Cache</option>
@@ -326,10 +327,11 @@
     </select>                        
 <br>                       
     <label id="la" for="amonunt"> Amount </label> <br>
-        <input type="text" name="quantity" value="1" maxlength="3" id="quantity"> </div>      
+        <input type="text" name="quantity" value="1" maxlength="3" id="quantity"> </div>    <br>
+      
         
     <div id="totalPrice">Total Price: 0 €</div>
     <div id="selectedComponents">Selected components: </div>
-    <script src="../private/calc.js"></script>
+   
 </body>
 </html>
