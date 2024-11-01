@@ -21,6 +21,12 @@ app.get('/config', (req, res) => {
 app.get('/impressum', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'impressum.html'));
 });
+app.get('/datenschutzen', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'datenschutzen.html'));
+});
+app.get('/datenschutzde', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'datenschutzde.html'));
+});
 app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'login.html'));
 });
