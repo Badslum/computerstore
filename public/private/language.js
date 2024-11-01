@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             og30: 'og30',
             og31: 'og31',
             og20: 'og20',
-            gpu_bracket: 'gpu_bracket',
+            lgpu_bracket: 'lgpu_bracket',
             ogp32: 'ogp32',
             ogp33: 'ogp33',
             ogp34: 'ogp34',

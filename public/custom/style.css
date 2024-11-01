@@ -348,6 +348,15 @@ body, html {
     margin: 0 auto;
 }
 
+.containern {
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .config_select {
     max-width: 500px;
     border: 1px solid #666;

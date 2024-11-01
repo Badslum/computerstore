@@ -20,7 +20,7 @@ const casePrices = {
     case1: 30,
     case2: 33,
     case3: 38,
-    case4: 53,
+    case4: 45,
     case5: 65
 };
 
@@ -131,7 +131,7 @@ const componentPrices = {
         ed110: 0,
         ed111: 240,
         ed112: 118,
-        ed112: 178
+        ed113: 178
     },
     powercable:{
         pc115: 0,
@@ -216,145 +216,177 @@ const componentPrices = {
 };
 
 function calculateTotal() {
+    console.log('calculateTotal called');
+
     let total = 0;
     let selectedComponents = [];
 
+    console.log(`total newly calculated: ${total}`);
     // Gehäuse Preis
     const selectedCase = document.querySelector('input[name="case"]:checked');
     if (selectedCase) {
         const casePrice = casePrices[selectedCase.value];
         total += casePrice;
-        selectedComponents.push(`Computer case: ${selectedCase.parentElement.textContent.trim()} - ${casePrice} €`);
+        selectedComponents.push(`<strong>Computer case</strong>: ${selectedCase.parentElement.textContent.trim()} - ${casePrice} €`);
     }
-
+    
+    console.log(`total newly calculated: ${total}`);
     // CPU Preis
     const selectedCPU = document.getElementById('cpu').value;
     if (selectedCPU) {
         const cpuPrice = componentPrices.cpu[selectedCPU];
         total += cpuPrice;
-        selectedComponents.push(`Processor (CPU): ${document.getElementById('cpu').options[document.getElementById('cpu').selectedIndex].text} - ${cpuPrice} €`);
+        selectedComponents.push(`<strong>Processor (CPU)</strong>: ${document.getElementById('cpu').options[document.getElementById('cpu').selectedIndex].text} - ${cpuPrice} €`);
     }
 
+    console.log(`total newly calculated: ${total}`);
     // Mainboard Preis
     const selectedMainboard = document.getElementById('mainboard').value;
     if (selectedMainboard) {
         const mainboardPrice = componentPrices.mainboard[selectedMainboard];
         total += mainboardPrice;
-        selectedComponents.push(`Mainboard: ${document.getElementById('mainboard').options[document.getElementById('mainboard').selectedIndex].text} - ${mainboardPrice} €`);
+        selectedComponents.push(`<strong>Mainboard</strong>: ${document.getElementById('mainboard').options[document.getElementById('mainboard').selectedIndex].text} - ${mainboardPrice} €`);
     }
 
+    console.log(`total newly calculated: ${total}`);
     // RAM Preis
     const selectedRAM = document.getElementById('ram').value;
     if (selectedRAM) {
         const ramPrice = componentPrices.ram[selectedRAM];
         total += ramPrice;
-        selectedComponents.push(`Random-access memory: ${document.getElementById('ram').options[document.getElementById('ram').selectedIndex].text} - ${ramPrice} €`);
+        selectedComponents.push(`<strong>Random-access memory</strong>: ${document.getElementById('ram').options[document.getElementById('ram').selectedIndex].text} - ${ramPrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // GPU Preis
     const selectedGPU = document.getElementById('gpu_selection').value;
     if (selectedGPU) {
         const gpuPrice = componentPrices.gpu_selection[selectedGPU];
         total += gpuPrice;
-        selectedComponents.push(`Graficscard<: ${document.getElementById('gpu_selection').options[document.getElementById('gpu_selection').selectedIndex].text} - ${gpuPrice} €`);
+        selectedComponents.push(`<strong>Graficscard</strong>: ${document.getElementById('gpu_selection').options[document.getElementById('gpu_selection').selectedIndex].text} - ${gpuPrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // GPU Bracket Preis
     const selectedGPUb = document.getElementById('gpu_bracket').value;
     if (selectedGPUb) {
         const gpubPrice = componentPrices.gpu_bracket[selectedGPUb];
         total += gpubPrice;
-        selectedComponents.push(`Gpu-bracket: ${document.getElementById('gpu_bracket').options[document.getElementById('gpu_bracket').selectedIndex].text} - ${gpubPrice} €`);
+        selectedComponents.push(`<strong>Gpu-bracket</strong>: ${document.getElementById('gpu_bracket').options[document.getElementById('gpu_bracket').selectedIndex].text} - ${gpubPrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // SSD Preise
     const selectedSSD1 = document.getElementById('ssd_drive1').value;
     if (selectedSSD1) {
         const ssd1Price = componentPrices.ssd_drive1[selectedSSD1];
         total += ssd1Price;
-        selectedComponents.push(`1. M.2 SSD drive: ${document.getElementById('ssd_drive1').options[document.getElementById('ssd_drive1').selectedIndex].text} - ${ssd1Price} €`);
+        selectedComponents.push(`<strong>1. M.2 SSD drive</strong>: ${document.getElementById('ssd_drive1').options[document.getElementById('ssd_drive1').selectedIndex].text} - ${ssd1Price} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     const selectedSSD2 = document.getElementById('ssd_drive2').value;
     if (selectedSSD2) {
         const ssd2Price = componentPrices.ssd_drive2[selectedSSD2];
         total += ssd2Price;
-        selectedComponents.push(`2. M.2 SSD drive: ${document.getElementById('ssd_drive2').options[document.getElementById('ssd_drive2').selectedIndex].text} - ${ssd2Price} €`);
+        selectedComponents.push(`<strong>2. M.2 SSD drive</strong>: ${document.getElementById('ssd_drive2').options[document.getElementById('ssd_drive2').selectedIndex].text} - ${ssd2Price} €`);
     }
     // SD Preise
+    
+    console.log(`total newly calculated: ${total}`);
     const selectedSD1 = document.getElementById('storage_drive1').value;
     if (selectedSD1) {
         const sd1Price = componentPrices.storage_drive1[selectedSD1];
         total += sd1Price;
-        selectedComponents.push(`1. Storage drive<: ${document.getElementById('storage_drive1').options[document.getElementById('storage_drive1').selectedIndex].text} - ${sd1Price} €`);
+        selectedComponents.push(`<strong>1. Storage drive</strong>: ${document.getElementById('storage_drive1').options[document.getElementById('storage_drive1').selectedIndex].text} - ${sd1Price} €`);
     }
     const selectedSD2 = document.getElementById('storage_drive2').value;
     if (selectedSD2) {
         const sd2Price = componentPrices.storage_drive2[selectedSD2];
         total += sd2Price;
-        selectedComponents.push(`2. Storage drive: ${document.getElementById('storage_drive2').options[document.getElementById('storage_drive2').selectedIndex].text} - ${sd2Price} €`);
+        selectedComponents.push(`<strong>2. Storage drive</strong>: ${document.getElementById('storage_drive2').options[document.getElementById('storage_drive2').selectedIndex].text} - ${sd2Price} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // DVD Preise
     const selectedDVD = document.getElementById('dvd').value;
     if (selectedDVD) {
         const dvdPrice = componentPrices.dvd[selectedDVD];
         total += dvdPrice;
-        selectedComponents.push(`DVD/BLU-RAY-Drive: ${document.getElementById('dvd').options[document.getElementById('dvd').selectedIndex].text} - ${dvdPrice} €`);
+        selectedComponents.push(`<strong>DVD/BLU-RAY-Drive</strong>: ${document.getElementById('dvd').options[document.getElementById('dvd').selectedIndex].text} - ${dvdPrice} €`);
     }
     const selectedEDVD = document.getElementById('externdvd').value;
     if (selectedEDVD) {
         const edvdPrice = componentPrices.externdvd[selectedEDVD];
         total += edvdPrice;
-        selectedComponents.push(`External DVD/BLU-RAY-Drive: ${document.getElementById('externdvd').options[document.getElementById('externdvd').selectedIndex].text} - ${edvdPrice} €`);
+        selectedComponents.push(`<strong>External DVD/BLU-RAY-Drive</strong>: ${document.getElementById('externdvd').options[document.getElementById('externdvd').selectedIndex].text} - ${edvdPrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // External drive Preis
     const selectedExternaldrive = document.getElementById('externaldrive').value;
     if (selectedExternaldrive) {
         const externaldrivePrice = componentPrices.externaldrive[selectedExternaldrive];
         total += externaldrivePrice;
-        selectedComponents.push(`External hard drive: ${document.getElementById('externaldrive').options[document.getElementById('externaldrive').selectedIndex].text} - ${externaldrivePrice} €`);
+        selectedComponents.push(`<strong>External hard drive</strong>: ${document.getElementById('externaldrive').options[document.getElementById('externaldrive').selectedIndex].text} - ${externaldrivePrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // Powercable Preis
     const selectedPowercable = document.getElementById('powercable').value;
     if (selectedEDVD) {
         const powercablePrice = componentPrices.powercable[selectedPowercable];
         total += powercablePrice;
-        selectedComponents.push(`Power cable: ${document.getElementById('powercable').options[document.getElementById('powercable').selectedIndex].text} - ${powercablePrice} €`);
+        selectedComponents.push(`<strong>Power cable</strong>: ${document.getElementById('powercable').options[document.getElementById('powercable').selectedIndex].text} - ${powercablePrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // CPU coolers Preis
     const selectedCPUcoolers = document.getElementById('cpucoolers').value;
     if (selectedCPUcoolers) {
         const cpucoolersPrice = componentPrices.cpucoolers[selectedCPUcoolers];
         total += cpucoolersPrice;
-        selectedComponents.push(`CPU coolers: ${document.getElementById('cpucoolers').options[document.getElementById('cpucoolers').selectedIndex].text} - ${cpucoolersPrice} €`);
+        selectedComponents.push(`<strong>CPU coolers</strong>: ${document.getElementById('cpucoolers').options[document.getElementById('cpucoolers').selectedIndex].text} - ${cpucoolersPrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // Heatconductingpaste Preis
     const selectedHeatconductingpaste = document.getElementById('heatconductingpaste').value;
     if (selectedHeatconductingpaste) {
         const heatconductingpastePrice = componentPrices.heatconductingpaste[selectedHeatconductingpaste];
         total += heatconductingpastePrice;
-        selectedComponents.push(`Heat conducting paste: ${document.getElementById('heatconductingpaste').options[document.getElementById('heatconductingpaste').selectedIndex].text} - ${heatconductingpastePrice} €`);
+        selectedComponents.push(`<strong>Heat conducting paste</strong>: ${document.getElementById('heatconductingpaste').options[document.getElementById('heatconductingpaste').selectedIndex].text} - ${heatconductingpastePrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // Operatingsystem Preis
     const selectedOperatingsystem = document.getElementById('os').value;
     if (selectedOperatingsystem) {
         const operatingsystemPrice = componentPrices.os[selectedOperatingsystem];
         total += operatingsystemPrice;
-        selectedComponents.push(`Operating system: ${document.getElementById('os').options[document.getElementById('os').selectedIndex].text} - ${operatingsystemPrice} €`);
+        selectedComponents.push(`<strong>Operating system</strong>: ${document.getElementById('os').options[document.getElementById('os').selectedIndex].text} - ${operatingsystemPrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // Language Preis
     const selectedLanguage = document.getElementById('language').value;
     if (selectedLanguage) {
-        selectedComponents.push(`Language: ${document.getElementById('language').options[document.getElementById('language').selectedIndex].text}`);
+        selectedComponents.push(`<strong>Language</strong>: ${document.getElementById('language').options[document.getElementById('language').selectedIndex].text}`);
     }
     // Operatingsystem Preis
     const selectedOfficesoftware = document.getElementById('officesoftware').value;
     if (selectedOfficesoftware) {
         const officesoftwarePrice = componentPrices.officesoftware[selectedOfficesoftware];
         total += officesoftwarePrice;
-        selectedComponents.push(`Office software: ${document.getElementById('officesoftware').options[document.getElementById('officesoftware').selectedIndex].text} - ${officesoftwarePrice} €`);
+        selectedComponents.push(`<strong>Office software</strong>: ${document.getElementById('officesoftware').options[document.getElementById('officesoftware').selectedIndex].text} - ${officesoftwarePrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // Monitor Preis
     const selectedMonitorquantity = document.getElementById('quantity_monitor').value;
     if (selectedMonitorquantity) {
         const monitorquantityPrice = componentPrices.quantity_monitor[selectedMonitorquantity];
-        selectedComponents.push(`Monitor quantity: ${document.getElementById('quantity_monitor').options[document.getElementById('quantity_monitor').selectedIndex].text} - ${monitorquantityPrice} `);
+        selectedComponents.push(`<strong>Monitor quantity</strong>: ${document.getElementById('quantity_monitor').options[document.getElementById('quantity_monitor').selectedIndex].text} - ${monitorquantityPrice} `);
     }
     const selectedMonitor = document.getElementById('monitor').value;
     if (selectedMonitor && selectedMonitorquantity) {        
@@ -362,65 +394,82 @@ function calculateTotal() {
         const monitorquantityPrice = componentPrices.quantity_monitor[selectedMonitorquantity];
         const monitorPrice = componentPrices.monitor[selectedMonitor] * monitorquantityPrice;
         total += monitorPrice;
-        selectedComponents.push(`Monitor: ${document.getElementById('monitor').options[document.getElementById('monitor').selectedIndex].text} - ${monitorPrice} €`);
+        selectedComponents.push(`<strong>Monitor</strong>: ${document.getElementById('monitor').options[document.getElementById('monitor').selectedIndex].text} - ${monitorPrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // Monitorkabel Preis
     const selectedMonitorcabel = document.getElementById('monitorcabel').value;
     if (selectedMonitorcabel) {        
         const monitorcabelPrice = componentPrices.monitorcabel[selectedMonitorcabel];
         total += monitorcabelPrice;
-        selectedComponents.push(`Monitor cable: ${document.getElementById('monitorcabel').options[document.getElementById('monitorcabel').selectedIndex].text} - ${monitorcabelPrice} €`);
+        selectedComponents.push(`<strong>Monitor cable</strong>: ${document.getElementById('monitorcabel').options[document.getElementById('monitorcabel').selectedIndex].text} - ${monitorcabelPrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // Monitor bracket  Preis
     const selectedMonitorbracket  = document.getElementById('monitorbracket').value;
     if (selectedMonitorbracket ) {
         const monitorbracketPrice = componentPrices.monitorbracket[selectedMonitorbracket];
         total += monitorbracketPrice;
-        selectedComponents.push(`Monitor bracket: ${document.getElementById('monitorbracket').options[document.getElementById('monitorbracket').selectedIndex].text} - ${monitorbracketPrice} €`);
+        selectedComponents.push(`<strong>Monitor bracket</strong>: ${document.getElementById('monitorbracket').options[document.getElementById('monitorbracket').selectedIndex].text} - ${monitorbracketPrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // Mouse & Keyboard Preis
     const selectedMouseandkeyboard  = document.getElementById('mouseandkeyboard').value;
     if (selectedMouseandkeyboard) {
         const mouseandkeyboardPrice = componentPrices.mouseandkeyboard[selectedMouseandkeyboard];
         total += mouseandkeyboardPrice;
-        selectedComponents.push(`Mouse & keyboard: ${document.getElementById('mouseandkeyboard').options[document.getElementById('mouseandkeyboard').selectedIndex].text} - ${mouseandkeyboardPrice} €`);
+        selectedComponents.push(`<strong>Mouse & keyboard</strong>: ${document.getElementById('mouseandkeyboard').options[document.getElementById('mouseandkeyboard').selectedIndex].text} - ${mouseandkeyboardPrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // Cable mangagement Preis
     const selectedCablemangagement  = document.getElementById('cablemangagement').value;
     if (selectedCablemangagement) {
         const cablemangagementPrice = componentPrices.cablemangagement[selectedCablemangagement];
         total += cablemangagementPrice;
-        selectedComponents.push(`Cable mangagement: ${document.getElementById('cablemangagement').options[document.getElementById('cablemangagement').selectedIndex].text} - ${cablemangagementPrice} €`);
+        selectedComponents.push(`<strong>Cable mangagement</strong>: ${document.getElementById('cablemangagement').options[document.getElementById('cablemangagement').selectedIndex].text} - ${cablemangagementPrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // Warranty Preis
     const selectedWarranty  = document.getElementById('warranty').value;
     if (selectedWarranty) {
         const warrantyPrice = componentPrices.warranty[selectedWarranty];
         total += warrantyPrice;
-        selectedComponents.push(`Warranty: ${document.getElementById('warranty').options[document.getElementById('warranty').selectedIndex].text} - ${warrantyPrice} €`);
+        selectedComponents.push(`<strong>Warranty</strong>: ${document.getElementById('warranty').options[document.getElementById('warranty').selectedIndex].text} - ${warrantyPrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
     // Delivery Preis
     const selectedDelivery  = document.getElementById('delivery').value;
     if (selectedDelivery) {
         const deliveryPrice = componentPrices.delivery[selectedDelivery];
         total += deliveryPrice;
-        selectedComponents.push(`Delivery: ${document.getElementById('delivery').options[document.getElementById('delivery').selectedIndex].text} - ${deliveryPrice} €`);
+        selectedComponents.push(`<strong>Delivery</strong>: ${document.getElementById('delivery').options[document.getElementById('delivery').selectedIndex].text} - ${deliveryPrice} €`);
     }  
+    
+    console.log(`total newly calculated: ${total}`);
     // Assembly time Preis
     const selectedAssemblytime  = document.getElementById('configurationtime').value;
     if (selectedAssemblytime) {
         const configurationtimePrice = componentPrices.configurationtime[selectedAssemblytime];
         total += configurationtimePrice;
-        selectedComponents.push(`Assembly time: ${document.getElementById('configurationtime').options[document.getElementById('configurationtime').selectedIndex].text} - ${configurationtimePrice} €`);
+        selectedComponents.push(`<strong>Assembly time</strong>: ${document.getElementById('configurationtime').options[document.getElementById('configurationtime').selectedIndex].text} - ${configurationtimePrice} €`);
     }
+    
+    console.log(`total newly calculated: ${total}`);
    
     // Den Wert der Textbox auslesen und in eine Zahl umwandeln
-    const quantityValue = parseInt(document.getElementById('quantity').value, 10) || 0;
-
-    // Multiplikation durchführen
-    total *= quantityValue;
-   
-      
+    const quantityValue = parseInt(document.getElementById('quantity').value) || 0; 
+    if (quantityValue > 0) { 
+        console.log('quantity changed')
+        // Multiplication 
+        total *= quantityValue; }
+     
+    console.log(`total newly calculated: ${total}`); 
     // Gesamtpreis und Auswahl anzeigen
     document.getElementById('totalPrice').textContent = `Total price: ${total} €`;
     //document.getElementById('selectedComponents').textContent = selectedComponents.join(', ');
@@ -428,20 +477,14 @@ function calculateTotal() {
 
 }
 
-// Event Listener für Änderungen an den Auswahlfeldern
-document.querySelectorAll('input[name="case"], #cpu, #mainboard, #ram, #gpu_selection, #gpu_bracket, #ssd_drive1, #ssd_drive2, #storage_drive1, #storage_drive2, #dvd, #externdvd, #externaldrive, #powercable, #cpucoolers, #heatconductingpaste, #os, #language, #officesoftware, #monitor, #quantity_monitor, #monitorcabel, #quantity_kabel, #monitorbracket, #mouseandkeyboard, #cablemangagement, #warranty, #delivery, #configurationtime, #quantity').forEach(element => {
-    element.addEventListener('change', calculateTotal);
-});
+    window.onload = function() { 
+        console.log('window.onload funktioniert'); 
+        document.querySelectorAll('input[name="case"], #cpu, #mainboard, #ram, #gpu_selection, #gpu_bracket, #ssd_drive1, #ssd_drive2, #storage_drive1, #storage_drive2, #dvd, #externdvd, #externaldrive, #powercable, #cpucoolers, #heatconductingpaste, #os, #language, #officesoftware, #monitor, #quantity_monitor, #monitorcabel, #quantity_kabel, #monitorbracket, #mouseandkeyboard, #cablemangagement, #warranty, #delivery, #configurationtime, input[name="quantity"]').forEach(element => { 
+            element.addEventListener('change', function() { 
+                console.log(`${element.id} wurde geändert`); 
+                calculateTotal(); });
+         }); 
+    // Initial calculation 
+    calculateTotal(); };
 
-// Initiale Berechnung beim Laden
-window.onload = calculateTotal;
 
-function loadPage(page) { 
-    fetch(`/pages/${page}.html`) 
-    .then(response => response.text()) 
-    .then(html => { contentDiv.innerHTML = html; 
-    // Re-apply language settings after loading new content 
-    loadLanguage(languageSelector.value); // Set total price and selected components 
-    document.getElementById('totalPrice').textContent = `Total price: ${total} €`; 
-    document.getElementById('selectedComponents').innerHTML = selectedComponents.join('<br>'); }) 
-    .catch(error => console.error('Error loading page:', error)); }

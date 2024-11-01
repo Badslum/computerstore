@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="Utf-8">
-<script src="../private/language.js" defer></script>
+<!--<script src="../private/language.js" defer></script>-->
 <script src="../private/calc.js"></script>
 <link rel="stylesheet" href="../custom/style.css">
 </head>
@@ -91,7 +91,7 @@
                 <option id="og20" value="g20" data-friendly-name="graphicscard">NONE; I ALREADY OWN A GRAPHICS CARD – 0 €</option>
             </select>
     
-            <label id="gpu_bracket" for="gpu_bracket">GPU Bracket</label>
+            <label id="lgpu_bracket" for="gpu_bracket">GPU Bracket</label>
             <select class="config_select" id="gpu_bracket" name="gpu_bracket">
                 <option id="ogp32" value="g32">NONE (INCLUDED FOR 4070 Ti / RX 7700 XT AND HIGHER)</option>
                 <option id="ogp33" value="g33">PCS GRAPHIC BRACKET (9 €)</option>
@@ -226,8 +226,10 @@
         <option id="ohcp126" value="hcp126">ARKTIC MX-4 EXTREM HEAT-CONDUNCTING PASTE (11 €)</option>
     </select>
 <br>
+</div>
                                                                                                                                                                                                                                                                                                                                                                                     
 <h1 id="h1os">Select your operating system & your software</h1>
+<div class="containerm"> 
 <label id="los" for="os">Operating system</label> <br>
     <select class="config_select" name="os" id="os">
         <option id="oos130" value="os130">Windows 11 Home 64 Bit – incl. single license</option>
@@ -333,13 +335,14 @@
         <option id="oc187" value="c187">FAST SHIPPING 1 BUSINESS DAY SHIPPING(119 €)</option>
     </select>                        
 <br>                       
-    <label id="la" for="amonunt"> Amount </label> <br>
+    <label id="la" for="quantity"> Amount </label> <br>
         <input type="text" name="quantity" value="1" maxlength="3" id="quantity" > </div>    <br>
         </div>
-      
-     <!--<div id="totalPrice">Total Price: 0 €</div>
+     <!--Output of price and selectedComponents-->
+        <div class="containern"> 
+     <div id="totalPrice">Total Price: 0 €</div>
     <div id="selectedComponents">Selected components: </div>
-   -->   
+    </div>
     
 </body>
 </html>
